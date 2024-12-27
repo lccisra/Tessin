@@ -9,7 +9,7 @@
   <title>Tessin</title>
   <meta property="og:title" content="Tessin" />
   <meta property="og:type"  content="article" />
-  <meta property="og:description" content="We are leaders in engineering and construction in diverse fields, from industrial to commercial and vertical buildings.">
+  <meta property="og:description" content="Especialistas en construcción de naves industriales llave en mano. Gestionamos proyectos desde la planeación hasta la entrega, garantizando calidad y eficiencia">
   <meta property="og:url"   content="https://tessin.com.mx/" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
@@ -41,7 +41,7 @@
   <section>
     <div class="herobanner">
       <div class="img-cover">
-        <img src="assets/img/bodega-industrial-monterrey-tessin.jpg">
+        <img src="assets/img/bodega-industrial-monterrey-tessin.jpg" alt="bodegas industriales monterrey" title="bodegas industriales monterrey">
         <div class="caption">
           <div class="container">
             <div class="row">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="img-cover">
-        <img src="assets/img/construccin-monterrey-tessin.jpg">
+        <img src="assets/img/construccion-monterrey-tessin.jpg" alt="bodegas industriales apodaca" title="bodegas industriales apodaca">
         <div class="caption">
           <div class="container">
             <div class="row">
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div class="img-cover">
-        <img src="assets/img/bodegas-industriales-apodaca-pesqueria.jpg">
+        <img src="assets/img/bodegas-industriales-apodaca-pesqueria.jpg" alt="construccion bodegas industriales" title="construccion bodegas industriales">
         <div class="caption">
           <div class="container">
             <div class="row">
