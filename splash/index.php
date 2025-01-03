@@ -9,7 +9,7 @@
   <title>Tessin</title>
   <meta property="og:title" content="Tessin" />
   <meta property="og:type"  content="article" />
-  <meta property="og:description" content="Especialistas en construcción de naves industriales llave en mano. Gestionamos proyectos desde la planeación hasta la entrega, garantizando calidad y eficiencia">
+  <meta property="og:description" content="Especialistas en construcción de naves industriales y comerciales. Gestionamos proyectos desde la planeación hasta la entrega, garantizando calidad y eficiencia">
   <meta property="og:url"   content="https://tessin.com.mx/" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
