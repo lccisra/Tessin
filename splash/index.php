@@ -31,8 +31,8 @@
         </div>
         <div class="col-md-6">
           <ul class="navigation">
-            <li></i><a href="tel:+19563601460" class="call"><i class="bi bi-phone"></i>+1 (956) 360-1460</a></li>
-            <li><a href="mailto:info@cignadnc.mx" class="btn">Contact Us <i class="bi bi-arrow-right-short"></i></a></li>
+            <li></i><a href="tel:+528126205789" class="call"><i class="bi bi-phone"></i>+52 81 2620 5789</a></li>
+            <li><a href="mailto:info@tessin.com.mx" class="btn">Contact Us <i class="bi bi-arrow-right-short"></i></a></li>
           </ul>
         </div>
       </div>
@@ -86,7 +86,7 @@
       <div class="row">
         <div class="col-md-12">
           <p>© Copyrights 2025 <span>TESSIN CAPITAL</span> - All Rights Reserved</p>
-          <a href="https://wa.me/19563601460" target="_blank" class="whatsapp icon-whatsapp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/+528126205789" target="_blank" class="whatsapp icon-whatsapp"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
