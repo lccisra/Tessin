@@ -59,7 +59,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1>Coming Soon</h1>
+                <h2 class="h1">Coming Soon</h2>
                 <p>Our website is under construction, but we are ready to go!</p>
               </div>
             </div>
@@ -72,7 +72,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1>Coming Soon</h1>
+                <h2 class="h1">Coming Soon</h2>
                 <p>Our website is under construction, but we are ready to go!</p>
               </div>
             </div>
