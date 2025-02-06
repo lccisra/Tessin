@@ -47,86 +47,20 @@ $(document).ready(function(){
   });
 
   //Herobanner
-  $('.herobanner').slick({
-    dots: false,
-    prevArrow: '<button class="slick-prev icon-prev">Prev</button>',
-    nextArrow: '<button class="slick-next icon-next">Next</button>',
-    infinite: true,
-    speed: 1500,
+ $('.slider-for').slick({
     slidesToShow: 1,
-    adaptiveHeight: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-        arrows: false,
-        dots: true,
-        }
-      }
-    ]
-  });
-  //Gallery
-  $('.gallery').slick({
-    dots: false,
-    arrows: true,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    fade: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: false,
-    pauseOnFocus: false
-  });
-  //Herobanner
-  $('.customers').slick({
-    dots: true,
-    infinite: false,
+    slidesToScroll: 1,
     arrows: false,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          infinite: true,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2000
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2000
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2000
-        }
-      }
-    ]
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
   });
   //
   $('.product-services').slick({
