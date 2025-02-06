@@ -143,8 +143,7 @@ header {
   left: 0;
   z-index: 999;
   background: transparent;
-  display: flex;
-  flex-flow: column;
+  padding-top: 15px;
   justify-content: center;
 }
 header.smaller {
@@ -155,6 +154,7 @@ header.smaller {
   height: 60px;
   padding-top: 0;  
 }
+header .logo { margin-top:3px; }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
