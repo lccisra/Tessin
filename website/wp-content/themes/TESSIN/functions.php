@@ -2,14 +2,50 @@
 
 if ( function_exists('register_sidebar') )
 	register_sidebar(array(
-		'name' => 'Col1',
-		'id'  => 'Col1',
+		'name' => 'CallToAction',
+		'id'  => 'calltoaction',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		'before_title' => '',
 		'after_title' => '',
 	));
-	
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Footer-col-1',
+		'id'  => 'footer-col-1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Footer-col-2',
+		'id'  => 'footer-col-2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));	
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Footer-col-3',
+		'id'  => 'footer-col-3',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Copyright',
+		'id'  => 'copyright',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+
 //thumbnail, medium, large or full
 function get_post_image($post_id, $size = 'thumbnail', $echo = true, $class = ''){
 	$args = array( 

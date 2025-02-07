@@ -52,7 +52,11 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    pauseOnHover:false
   });
   $('.slider-nav').slick({
     slidesToShow: 3,
@@ -112,3 +116,32 @@ $(document).ready(function(){
       }
     });
 });
+
+//Counter
+const mediaQuery = window.matchMedia("(prefers-reduced-motion:reduce)");
+if (
+  "IntersectionObserver" in window &&
+  window.CSS &&
+  CSS.registerProperty &&
+  !mediaQuery.matches
+) {
+  var targets = document.querySelectorAll(".count");
+  [].forEach.call(targets, function (target) {
+    target.classList.add("zero");
+  });
+  var options = {
+    root: null,
+    threshold: [0.5]
+  };
+  var io = new IntersectionObserver(function (entries, self) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("anim");
+        self.unobserve(entry.target);
+      }
+    });
+  }, options);
+  [].forEach.call(targets, function (target) {
+    io.observe(target);
+  });
+}

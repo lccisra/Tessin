@@ -17,6 +17,9 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/animate.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/main.css">  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
@@ -25,12 +28,12 @@
   <header>
 	  <div class="container-fluid">
       <div class="row">
-        <div class="col-6 col-md-2 d-flex align-items-center">            
-		   		<a href="<?php bloginfo('url'); ?>" title="Home">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" class="logo" width="327" height="40" title="TESSIN" alt="TESSIN">
+        <div class="col-6 col-md-3 d-flex align-items-center">            
+		   		<a href="<?php bloginfo('url'); ?>" title="TESSIN">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo-tessin.svg" class="logo" width="237" height="60" title="TESSIN" alt="TESSIN">
           </a> 
         </div>
-        <div class="col-6 col-md-10 header-navigation">
+        <div class="col-6 col-md-9 header-navigation">
           <div class="hamburger icon-menu show-md"></div>
           <div class="navigation">
             <nav class="hide-md">
@@ -38,10 +41,15 @@
               
             </nav>
           </div>
-          <div class="navigation">ENG</div>
-          <div class="navigation">p</div>
-          <div class="navigation">
-            <a href="mailto:info@tessin.com.mx" class="btn">Contact Us <i class="bi bi-arrow-right-short"></i></a>
+          <div class="navigation lngg">
+            <i class="bi bi-globe"></i>
+            <!-- ENG<i class="bi bi-chevron-down"></i> -->
+          </div>
+          <div class="navigation srch">
+            <i class="bi bi-search"></i>
+          </div>
+          <div class="navigation cntc">
+            <a href="" class="btn">CONTÁCTANOS <i class="bi bi-arrow-right-short"></i></a>
           </div>  
         </div> 
       </div>  
