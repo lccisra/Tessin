@@ -1,13 +1,79 @@
 <?php
 
-// if ( function_exists('register_sidebar') )
-// 	register_sidebar(array(
-// 		'name' => 'Col1',
-// 		'before_widget' => '<div>',
-// 		'after_widget' => '</div>',
-// 		'before_title' => '',
-// 		'after_title' => '',
-// 	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'CallToAction',
+		'id'  => 'calltoaction',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Col-1',
+		'id'  => 'col-1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Col-2',
+		'id'  => 'col-2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Col-3',
+		'id'  => 'col-3',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Col-4',
+		'id'  => 'col-4',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Col-5',
+		'id'  => 'col-5',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Copyright',
+		'id'  => 'copyright',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Certificaciones',
+		'id'  => 'certificates',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
 	
 //thumbnail, medium, large or full
 function get_post_image($post_id, $size = 'thumbnail', $echo = true, $class = ''){

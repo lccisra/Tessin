@@ -2,61 +2,59 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="bg-white ft-contact">
-						<div class="row d-flex">
-							<div class="col-md-4 d-flex">
-								<div class="box-gray">
-									<?php dynamic_sidebar('Telefono'); ?>
-								</div>
-							</div>
-							<div class="col-md-4 d-flex">
-								<div class="box-gray">
-									<?php dynamic_sidebar('Direcion'); ?>
-								</div>	
-							</div>
-							<div class="col-md-4 d-flex">
-								<div class="box-gray">
-									<?php dynamic_sidebar('Correo'); ?>
-								</div>	
-							</div>
-						</div>
-					</div>	
+				<div class="col-md-12 calltoaction pb30">
+					<?php  dynamic_sidebar('calltoaction'); ?>
+					<div class="btns d-flex justify-content-center pb20">
+						<a href="" class="btn brdr wht mb20">Contáctanos</a>
+						<a href="" class="btn white mb20">Contáctanos <i class="icon-whatsapp"></i></a>
+					</div>
+					<hr>
 				</div>	
 			</div>
-		</div>
-		<div class="container ft-navigation">
 			<div class="row">
-				<div class="col-md-2 pb-40">
-					<a href="<?php bloginfo('url'); ?>" title="Inicio">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ft-logo.svg" class="logo" width="73" height="70" title="Blukey" alt="Blukey">
-          </a> 
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-6 pb40">
+							<?php  dynamic_sidebar('col-1'); ?>
+						</div>
+						<div class="col-md-6 pb40">
+							<?php  dynamic_sidebar('col-2'); ?>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-3">
-					<?php dynamic_sidebar('Navegacion'); ?>
-					<?php wp_nav_menu(array('theme_location'=>'footer-menu-col-1','container'=>false,'menu_class'=>'ft-nav')); ?>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-4 pb40">
+							<?php  dynamic_sidebar('col-3'); ?>
+						</div>
+						<div class="col-md-4 pb40">
+							<?php  dynamic_sidebar('col-4'); ?>
+						</div>
+						<div class="col-md-4 pb40">
+							<?php  dynamic_sidebar('col-5'); ?>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<?php dynamic_sidebar('Servicios'); ?>
-					<?php wp_nav_menu(array('theme_location'=>'footer-menu-col-2','container'=>false,'menu_class'=>'ft-nav')); ?>
-				</div>
-				<div class="col-md-1">
-					<ul class="social">
-  					<li><a href="<?=get_post_meta(7,'linkedin', true)?>" class="icon-in" title="linkedin" target="_blank"></a></li>
-  					<li><a href="https://api.whatsapp.com/send?phone=<?=get_post_meta(7,'whatsapp', true)?>" class="icon-whatsapp" title="whatsapp" target="_blank"></a></li>
-  				</u>
-				</div>
+				
 			</div>
 		</div>
-		<div class="copyright">
+		<div class="footer-ft">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<?php dynamic_sidebar('Copyright'); ?>
+					<div class="col-md-4">
+						<a href="<?php bloginfo('url'); ?>" title="NOLAN">
+				            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ft-logo-nolan.svg" width="332" height="20" title="NOLAN" alt="NOLAN">
+				         </a> 
+					</div>
+					<div class="col-md-4 copyright">
+						<?php  dynamic_sidebar('copyright'); ?>
+					</div>
+					<div class="col-md-4 certificates">
+						<?php  dynamic_sidebar('certificates'); ?>
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</footer>
   <script defer type="text/javascript" src='https://code.jquery.com/jquery-1.8.2.min.js'></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/wow.js"></script> 

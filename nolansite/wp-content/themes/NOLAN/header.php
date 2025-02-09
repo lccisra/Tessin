@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/animate.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/main.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
@@ -26,7 +29,7 @@
       <div class="row">
         <div class="col-6 col-md-2 d-flex align-items-center">            
 		   		<a href="<?php bloginfo('url'); ?>" title="Home">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" class="logo" width="73" height="70" title="Blukey" alt="Blukey">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo-nolan.svg" class="logo" width="103" height="20" title="NOLAN" alt="NOLAN">
           </a> 
         </div>
         <div class="col-6 col-md-10 header-navigation">
@@ -43,5 +46,5 @@
       <nav>
         <?php wp_nav_menu(array('theme_location'=>'mobile-menu','container'=>false,'menu_class'=>'')); ?>
       </nav>
-  
-    </div>     
+    </div>  
+ </header>      
