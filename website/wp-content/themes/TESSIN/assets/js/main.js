@@ -66,7 +66,7 @@ $(document).ready(function(){
     centerMode: true,
     focusOnSelect: true
   });
-  //
+  //Servicios
   $('.services').slick({
     infinite: true,
     slidesToShow: 3,
@@ -92,7 +92,32 @@ $(document).ready(function(){
       }
     ]
   });
-
+//Clients
+  $('.clients').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
   //Scroll
   $('.scroll').click(function(){
     var $anchor = $(this);
