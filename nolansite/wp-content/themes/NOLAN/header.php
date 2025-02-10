@@ -22,20 +22,21 @@
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
-	
 <body>
   <header>
 	  <div class="container">
       <div class="row">
         <div class="col-6 col-md-2 d-flex align-items-center">            
 		   		<a href="<?php bloginfo('url'); ?>" title="Home">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo-nolan.svg" class="logo" width="103" height="20" title="NOLAN" alt="NOLAN">
+            <img loading="lazy" class="white" src="<?php bloginfo('template_url'); ?>/assets/img/logo-nolan.svg" class="logo" width="103" height="20" title="NOLAN" alt="NOLAN">
+            <img loading="lazy" class="color" src="<?php bloginfo('template_url'); ?>/assets/img/logo-nolan-color.svg" class="logo" width="103" height="20" title="NOLAN" alt="NOLAN">
           </a> 
         </div>
         <div class="col-6 col-md-10 header-navigation">
           <div class="hamburger icon-menu show-md"></div>
           <nav class="hide-md">
           	<?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
+            <a href="" class="whatsapp">Whatsapp <i class="icon-whatsapp"></i></a>
           </nav>
         </div> 
       </div>  
@@ -47,4 +48,8 @@
         <?php wp_nav_menu(array('theme_location'=>'mobile-menu','container'=>false,'menu_class'=>'')); ?>
       </nav>
     </div>  
- </header>      
+ </header>    
+<ul class="social">
+    <li><a href="" class="icon-instagram" target="_blank"></a></li>
+    <li><a href="" class="icon-linkedin" target="_blank"></a></li>
+</ul>   
