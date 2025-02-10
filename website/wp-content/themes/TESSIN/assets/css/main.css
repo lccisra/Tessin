@@ -585,6 +585,9 @@ body.open-menu #mobile-menu {
 .bg-texture-orange {
   background: url(../img/texture-orange.svg) #FB5519;
 }
+.bg-structure {
+  background: url(../img/bg-servicess.webp) no-repeat bottom;
+}
 .btn {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -833,6 +836,26 @@ a.call:before {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 0;
+} 
+.item-num {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.item-num .year-numb {
+  font-family: "Yantramanav", serif;
+  font-size: 70px;
+  font-weight: 600;
+  height: 50px;
+  margin-bottom: 5px;
+  color: #FB5519;
+  margin-right: 20px;
+}
+.item-num .year-numb:before {
+  content: '+ ';
+  position: relative;
+  left: -40px;
+  top: 16px;
 }
 /*////////////////////////
 ///       Slick       ////
