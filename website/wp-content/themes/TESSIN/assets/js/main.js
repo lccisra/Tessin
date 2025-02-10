@@ -67,7 +67,7 @@ $(document).ready(function(){
     focusOnSelect: true
   });
   //
-  $('.product-services').slick({
+  $('.services').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -76,6 +76,7 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 992,

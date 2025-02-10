@@ -68,11 +68,29 @@
 	<section class="bg-structure pb20">
 		<div class="container">
 			<div class="wor">
-				<div class="col-md-12">
+				<div class="col-md-12 pb20">
 					<?php echo wp_kses_post( get_field('serv_txt')); ?>
 				</div>
-				<div class="col-md-12 pb40">
-					servicios
+				<div class="col-md-12 pb80">
+					<!---->
+					<div class="services">
+					<?php $args = array('post_type'=>'page','posts_per_page'=> -1,'post_parent'=>19,'orderby'=>'date','order'=>'DESC'); ?>
+					<?php $parent = new WP_Query($args); ?>
+					<?php if($parent->have_posts()): while($parent->have_posts()): $parent->the_post(); ?>
+					<a href="<?php the_permalink(); ?>">	
+						<div>
+							<div class="card-service">
+								<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_icono_orange')); ?>" class="icono" width="60" height="60" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+								<h4><?php the_title(); ?></h4>
+								<?php echo wp_kses_post( get_field('serv_intro')); ?>
+								<span class="more">Leer más <i class="bi bi-arrow-right-short"></i></span>
+							</div>
+						</div>	
+					</a>	
+					<?php the_title(); ?>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
+					<!---->
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -115,6 +133,30 @@
 							<?php echo wp_kses_post( get_field('num_txt_4')); ?>	
 						</div>
 					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pt80 pb80">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner img-cover rounded15">
+						<div class="path"></div>
+						<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_bg')); ?>" width="1400" height="402" alt="Nave industrial" title="Nave industrial">
+						<div class="relative">
+							<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_isotipo')); ?>" class="isotipo wow bounceIn" width="52" height="60" alt="isotipo tessin" title="isotipo tessin" data-wow-delay="0.2s">
+							<div class="wow fadeIn" data-wow-delay="0.2s">
+								<?php echo wp_kses_post( get_field('banner_txt')); ?>
+							</div>
+						</div>
+						<div class="btns wow fadeInUp" data-wow-delay="0.2s">
+							<ul>
+								<li><a title="Contáctanos" href="" class="btn">Contáctanos <i class="bi bi-arrow-right-short"></i></a></li>
+								<li><a title="Conócenos" href="" class="btn dark">Conócenos <i class="bi bi-arrow-right-short"></i></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
