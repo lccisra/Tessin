@@ -2,7 +2,7 @@
 <?php get_header('flat'); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<section class="img-cover pt80">
-		<img src="<?php echo wp_kses_post( get_field('about_background')); ?>" width="1300" height="1180" alt="Nosotros Nolan" title="Nosotros Nolan"> 
+		<img src="<?php echo wp_kses_post( get_field('about_background')); ?>" width="1300" height="1180" alt="Nosotros Nolan" title="Nosotros Nolan">
 		<div class="container relative">
 			<div class="row pt80">
 				<div class="col-md-4 d-flex flex-column justify-content-center wow fadeInRight" data-wow-delay="0.2s">

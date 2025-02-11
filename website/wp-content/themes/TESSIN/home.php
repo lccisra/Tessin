@@ -25,14 +25,14 @@
 						</div>
 					</div>
 					<div class="slider-for">
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="" height="" alt="" title=""></div>
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="" height="" alt="" title=""></div>
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="" height="" alt="" title=""></div>
+						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="1440" height="800" alt="Especialistas en construcción de naves industriales" title="Especialistas en construcción de naves industriales"></div>
+						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="1440" height="800" alt="Expertos en construcción de instalaciones industriales" title="Expertos en construcción de instalaciones industriales"></div>
+						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="1440" height="800" alt="Profesionales en edificación de naves industriales" title="Profesionales en edificación de naves industriales"></div>
 					</div>
 					<div class="slider-nav">
-						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="" height="" alt="" title=""></div>
-						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="" height="" alt="" title=""></div>
-						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="" height="" alt="" title=""></div>
+						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="80" height="80" alt="Especialistas en desarrollo de naves industriales" title="Especialistas en desarrollo de naves industriales"></div>
+						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="80" height="80" alt="Contratistas en construcción de naves industriales" title="Contratistas en construcción de naves industriales"></div>
+						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="80" height="80" alt="Consultores en edificación de instalaciones industriales" title="Consultores en edificación de instalaciones industriales"></div>
 					</div>
 				</div>
 			</div>
@@ -42,9 +42,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="intro-img relative">
+					<div class="intro-img relative wow fadeInUp" data-wow-delay="0.4s">
 						<div class="path crt"></div>
-						<div class="bg-texture-orange card-years wow fadeInUp" data-wow-delay="0.4s">
+						<div class="bg-texture-orange card-years wow fadeInDown" data-wow-delay="0.4s">
 							<div class="year-numb">
 								<div class="count" style="--tonum:<?php echo wp_kses_post( get_field('years_num')); ?>"></div>
 							</div>
@@ -52,7 +52,7 @@
 								<?php echo wp_kses_post( get_field('years_txt')); ?>	
 							</div>
 						</div>
-						<img loading="lazy" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID )); ?>" class="rounded15" width="" height="" alt="" title="">
+						<img loading="lazy" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID )); ?>" class="rounded15" width="416" height="686" alt="Acerca de Tessin constructora de naves industriales" title="Acerca de Tessin constructora de naves industriales">
 					</div>	
 				</div>
 				<div class="col-md-8 intro-txt wow fadeIn" data-wow-delay="0.4s">
@@ -79,7 +79,10 @@
 					<a href="<?php the_permalink(); ?>">	
 						<div>
 							<div class="card-service">
-								<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_icono_orange')); ?>" class="icono" width="60" height="60" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+								<div class="img-cover">
+									<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_img')); ?>" width="500" height="450" alt="tessin <?php the_title(); ?>" title="tessin <?php the_title(); ?>">
+								</div>
+								<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_icono_orange')); ?>" class="icono" width="60" height="60" alt="Servicio de <?php the_title(); ?>" title="Servicio de <?php the_title(); ?>">
 								<h4><?php the_title(); ?></h4>
 								<?php echo wp_kses_post( get_field('serv_intro')); ?>
 								<span class="more">Leer más <i class="bi bi-arrow-right-short"></i></span>

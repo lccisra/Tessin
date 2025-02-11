@@ -54,13 +54,14 @@ $(document).ready(function(){
     fade: true,
     asNavFor: '.slider-nav',
     autoplay: true,
-    speed: 2000,
+    // speed: 2000,
     autoplaySpeed: 3000,
     pauseOnHover:false
   });
   $('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    // speed: 2000,
     asNavFor: '.slider-for',
     dots: true,
     centerMode: true,
