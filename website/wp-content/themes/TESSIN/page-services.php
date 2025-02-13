@@ -31,7 +31,7 @@
 	<section class="pt80 pb60 wow fadeIn" data-wow-delay="0.4s">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
-				<div class="col-md-9 intro">
+				<div class="col-md-10 intro">
 					<?php the_content(); ?>
 				</div>
 			</div>

@@ -135,4 +135,25 @@ function twentytwelve_setup() {
  }
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
 
+
+//Projects
+function proyects_post_type(){
+	register_post_type( 'projects', [
+		'labels' => [
+			'name' => __('Proyectos'),
+			'singular_name' => __('Proyectos')
+		],
+		'public' => true,
+		'has_archive' => false, 
+		'rewrite' => ['slug' => 'proyectos'],
+		'supports' => [
+			'thumbnail',
+			'title',
+			'editor',
+			'custom-fields'
+		]
+	]);
+}
+add_action('init', 'proyects_post_type');
+
 ?>
