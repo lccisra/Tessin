@@ -104,6 +104,7 @@ $(document).ready(function(){
     pauseOnHover: false,
     pauseOnFocus: false,
     dots: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,

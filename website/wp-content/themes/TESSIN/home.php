@@ -138,7 +138,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt80 pb60">
+	<section class="pt80 pb80">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -146,7 +146,7 @@
 						<div class="path"></div>
 						<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_bg')); ?>" width="1400" height="402" alt="Nave industrial" title="Nave industrial">
 						<div class="relative">
-							<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_isotipo')); ?>" class="isotipo wow bounceIn" width="52" height="60" alt="isotipo tessin" title="isotipo tessin" data-wow-delay="0.2s">
+							<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_isotipo')); ?>" class="isotipo wow bounceIn" width="52" height="60" alt="isotipo tessin" title="isotipo tessin" data-wow-delay="0.6s">
 							<div class="wow fadeIn" data-wow-delay="0.2s">
 								<?php echo wp_kses_post( get_field('banner_txt')); ?>
 							</div>
@@ -162,18 +162,17 @@
 			</div>
 		</div>
 	</section>
-	<section class="img-cover pt80 pb80">
-		<img loading="lazy" src="<?php echo wp_kses_post( get_field('bg_project')); ?>" width="1400" height="750" alt="" title="">
+	<section class="img-cover pb60 bg-texture-gray relative bg-projects">
 		<div class="container relative">
 			<div class="row">
-				<div class="col-md-6">
-					<p class="subtitle"><?php echo wp_kses_post( get_field('project_subtitle')); ?></p>
-					<h2 class="orange"><?php echo wp_kses_post( get_field('project_title')); ?></h2>
+				<div class="col-md-6 pb10">
+					<p class="subtitle wow fadeInLeft" data-wow-delay="0.2s"><?php echo wp_kses_post( get_field('project_subtitle')); ?></p>
+					<h2 class="orange wow fadeInLeft" data-wow-delay="0.4s"><?php echo wp_kses_post( get_field('project_title')); ?></h2>
 				</div>
 				<div class="col-md-5 d-flex justify-content-end">
-					<a href="" class="btn">Ver todos los proyectos <i class="bi bi-arrow-right-short"></i></a>
+					<a href="" class="btn wow fadeInRight" data-wow-delay="0.2s">Ver todos los proyectos <i class="bi bi-arrow-right-short"></i></a>
 				</div>
-				<div class="col-md-11 p0">
+				<div class="col-md-11 p0 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="projects">
 						<?php $query = new WP_Query(['post_type' => 'projects']); ?> 
 						<?php if($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>

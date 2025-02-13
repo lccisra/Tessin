@@ -59,7 +59,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="pb40">
 		<div class="container">
 			<div class="row">
 				<?php $query = new WP_Query(['post_type' => 'projects']); ?> 
