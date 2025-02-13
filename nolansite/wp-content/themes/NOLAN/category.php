@@ -1,6 +1,19 @@
-<?php get_header(); ?>
-<?php if(function_exists('bcn_display')){ bcn_display(); } ?>
+<?php get_header('flat'); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<section class="mt-site pt80 pb80">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<h1 class="center"><?php the_title(); ?></h1>
+					<?php the_content(); ?>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
