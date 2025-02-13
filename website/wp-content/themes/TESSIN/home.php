@@ -138,8 +138,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt80 pb80">
-		<div class="container-fluid">
+	<section class="pt80 pb60">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="banner img-cover rounded15">
@@ -170,11 +170,29 @@
 					<p class="subtitle"><?php echo wp_kses_post( get_field('project_subtitle')); ?></p>
 					<h2 class="orange"><?php echo wp_kses_post( get_field('project_title')); ?></h2>
 				</div>
-				<div class="col-md-6 d-flex justify-content-end">
+				<div class="col-md-5 d-flex justify-content-end">
 					<a href="" class="btn">Ver todos los proyectos <i class="bi bi-arrow-right-short"></i></a>
 				</div>
-				<div class="col-md-12">
-					
+				<div class="col-md-11 p0">
+					<div class="projects">
+						<?php $query = new WP_Query(['post_type' => 'projects']); ?> 
+						<?php if($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
+						<div class="div">
+							<a href="<?php echo wp_kses_post( get_field('video_youtube')); ?>" class="fancybox-media">
+								<div class="card-project">
+									<div class="project-img img-cover">
+										<?php echo get_the_post_thumbnail(get_the_ID()); ?>
+									</div>
+									<div class="project-desc">
+										<span class="btn-circle"><i class="bi bi-arrow-right-short"></i></span>
+										<h3 class="h4"><?php the_title(); ?></h3>
+										<?php the_content(); ?>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<?php endwhile; wp_reset_postdata(); endif; ?>
+					</div>	
 				</div>
 			</div>
 		</div>

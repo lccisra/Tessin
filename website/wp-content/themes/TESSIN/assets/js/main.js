@@ -77,7 +77,7 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 992,
@@ -104,6 +104,32 @@ $(document).ready(function(){
     pauseOnHover: false,
     pauseOnFocus: false,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  //Projects
+  $('.projects').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    dots: false,
     responsive: [
       {
         breakpoint: 992,
