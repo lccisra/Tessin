@@ -86,5 +86,38 @@
 			</div>
 		</div>
 	</section>
+	<section class="pb80">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pt80 process bg-texture-gray rounded15">
+						<div class="row">
+							<div class="col-md-12 col-xl-8 wow fadeInLeft" data-wow-delay="0.2s">
+								<p class="subtitle"><?php echo wp_kses_post( get_field('process_subtitle')); ?></p>
+								<?php echo wp_kses_post( get_field('process_txt')); ?>
+							</div>
+							<ol>
+								<li class="wow fadeIn" data-wow-delay="0.2s">
+									<i class="arrow wow"></i>
+									<?php echo wp_kses_post( get_field('item_process_1')); ?>
+								</li>
+								<li class="wow fadeIn" data-wow-delay="0.4s">
+									<i class="arrow top">
+									</i><?php echo wp_kses_post( get_field('item_process_2')); ?>
+								</li>
+								<li class="wow fadeIn" data-wow-delay=".6s">
+									<i class="arrow wow"></i>
+									<?php echo wp_kses_post( get_field('item_process_3')); ?>
+								</li>
+								<li class="wow fadeIn" data-wow-delay=".8s">
+									<?php echo wp_kses_post( get_field('item_process_4')); ?>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
