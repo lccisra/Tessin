@@ -23,7 +23,6 @@
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
-	
 <body>
   <header>
 	  <div class="container-fluid">
@@ -34,21 +33,23 @@
           </a> 
         </div>
         <div class="col-6 col-md-9 header-navigation">
-          <div class="hamburger icon-menu show-md"></div>
-          <div class="navigation">
-            <nav class="hide-md">
+          <div class="hamburger icon-menu show-xxl"></div>
+          <div class="navigation hide-xxl">
+            <nav>
               <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
-              
             </nav>
           </div>
+          <!--
           <div class="navigation lngg">
-            <i class="bi bi-globe"></i>
-            <!-- ENG<i class="bi bi-chevron-down"></i> -->
+            <a href="" class="bi bi-globe"></a>
+            ENG<i class="bi bi-chevron-down"></i> 
           </div>
-          <div class="navigation srch">
-            <i class="bi bi-search"></i>
+          -->
+          <div class="navigation srch hide-xxl">
+            <a href="" class="bi bi-search"></a>
+            <?php //get_search_form(); ?>
           </div>
-          <div class="navigation cntc">
+          <div class="navigation cntc hide-xxl">
             <a href="" class="btn">CONTÁCTANOS <i class="bi bi-arrow-right-short"></i></a>
           </div>  
         </div> 
@@ -58,7 +59,7 @@
     <div id="mobile-menu">
       <div class="close-menu icon-close"></div>
       <nav>
-        <?php wp_nav_menu(array('theme_location'=>'mobile-menu','container'=>false,'menu_class'=>'')); ?>
+        <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
       </nav>
       <div class="right">
 

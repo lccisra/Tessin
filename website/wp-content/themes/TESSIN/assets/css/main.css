@@ -185,8 +185,12 @@ header.smaller .navigation {
 header.smaller .navigation.cntc {
   padding-top: 0;
 }
+header.smaller .srch a,
 header.smaller nav ul li a {
   color: #010101;
+}
+header.smaller .navigation.srch {
+  padding-top: 10px;
 }
 @keyframes fadeInDown {
   0% {
@@ -212,7 +216,7 @@ header.smaller nav ul li a {
   color: white;
 }
 .navigation.srch {
-
+  padding-top: 17px;
 }
 .navigation.srch i {
   font-size: 20px;
@@ -224,6 +228,20 @@ header.smaller nav ul li a {
 .header-navigation {
   display: flex;
   justify-content: flex-end;
+}
+.srch a {
+  font-size: 18px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.srch a:hover {
+  color: #fb5519 !important;
 }
 /*////////////////////////
 ///       Footer      ////
@@ -448,13 +466,13 @@ nav ul li:last-child {
   width: 45px;
   height: 45px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   transition: all 300ms;
-  background: #1B4381;
+  background: #FB5519;
 }
 .hamburger:hover {
-  background: #48689A;
+  background: #010101;
 }
 .cerrar-menu img:hover {
   opacity: 0.7;
@@ -572,6 +590,7 @@ body.open-menu #mobile-menu {
 .mt-site { margin-top: 15px; }
 .show-md,
 .show-xl,
+.show-xxl,
 .display-none { display: none; }
 .img-cover {
   position: relative;
@@ -1733,7 +1752,9 @@ input[type="checkbox"] {
 ///   Media Queries    ///
 ////////////////////////*/
 @media (min-width: 1200px) {  }
-@media screen and (max-width: 1290px) {}
+@media screen and (max-width: 1290px) {
+  nav ul li { margin-right: 20px; }
+}
 @media screen and (max-width: 1199px) {
   .process ol {
     display: flex;
@@ -1755,8 +1776,17 @@ input[type="checkbox"] {
     bottom: -100px;
     right: -75px;
   }
+  .show-xxl { display: inline-block !important; }
+  .hide-xxl { display: none !important; }
+  .stage-medium .path.crt,
+  .herobanner .path.crt {
+    width: 60px;
+    height: 60px;
+  }
 }
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+
+}
 @media screen and (max-width: 991px) {
   .show-xl { display: inline-block !important; }
   .hide-xl { display: none !important; }
