@@ -45,6 +45,15 @@ if ( function_exists('register_sidebar') )
 		'before_title' => '',
 		'after_title' => '',
 	));
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id'  => 'sidebar',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => '',
+	));
 
 //thumbnail, medium, large or full
 function get_post_image($post_id, $size = 'thumbnail', $echo = true, $class = ''){
@@ -124,7 +133,7 @@ function get_post_attachment($post_id){
 
 function register_my_menus() {
 	register_nav_menus(
-		array('header-menu' => __('Header Menu'), 'mobile-menu' => __('Mobile Menu'), 'footer-menu-col-1' => __('Footer Menu Col 1'), 'footer-menu-col-2' => __('Footer Menu Col 2'))
+		array('header-menu' => __('Header Menu'), 'service-menu' => __('Service Menu'), 'footer-menu-col-1' => __('Footer Menu Col 1'), 'footer-menu-col-2' => __('Footer Menu Col 2'))
 	);
 }
 add_action( 'init', 'register_my_menus' );

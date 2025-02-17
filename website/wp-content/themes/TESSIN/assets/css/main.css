@@ -619,6 +619,7 @@ body.open-menu #mobile-menu {
 .bg-structure {
   background: url(../img/bg-servicess.webp) no-repeat bottom;
 }
+.bg-light { background:#F5F5F5 !important; }
 .btn {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -1382,6 +1383,109 @@ ul.sect li .icono {
   right: -110px;
 }
 /*////////////////////////
+///       Sidebar     ////
+////////////////////////*/
+.sidebar {
+  border-radius: 15px;
+  background: #f5f5f5;
+  padding: 35px 30px 40px 30px;
+}
+.sidebar h3 {
+  margin-bottom: 30px;
+}
+.sidebar ul.menu {
+  margin-bottom: 40px;
+}
+.sidebar ul.menu li {
+  margin-bottom: 10px;
+}
+.sidebar ul.menu li a {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+  background: white;
+  border-radius: 5px;
+  padding: 14px 10px 14px 20px;
+  position: relative;
+  transition: all 300ms;
+} 
+.sidebar ul.menu li a:before {
+  content: "\f135";
+  font-family: bootstrap-icons !important;
+  color: white;
+  background: #FF7746;
+  font-size: 20px;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 2;
+  transition: 0.4s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 10px;
+}
+.sidebar ul.menu li a:hover {
+  color: white;
+  background: #222222;
+}
+.sidebar ul.menu li a:hover:before {
+  background: #4B4A4A;
+  transform: rotate(0deg);
+}
+.sidebar .sdbr-cta {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+/*////////////////////////
+///      Accordeon    ////
+////////////////////////*/
+.accordion {
+  padding: 30px 30px 20px 30px;
+  border-radius: 15px;
+}
+.accordion .accordion-button {
+  background: white;
+  font-size: 18px;
+  color: #323232;
+  font-weight: 500;
+  padding: 12px  20px 12px 30px;
+  border-radius: 10px !important;
+}
+.accordion .accordion-button:after {
+  font-family: bootstrap-icons !important;
+  content: "\f124";
+  color: #FB5519;
+  background-image: none;
+  font-size: 30px;
+  height: auto;
+  width: auto;
+}
+.accordion .accordion-item {
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+}
+.accordion .accordion-body {
+  background: white;
+  padding: 30px;
+  border-radius: 0 0 15px 15px;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: white;
+  box-shadow: none;
+  background: #FB5519;
+  border-radius: 10px 10px 0 0 !important;
+}
+.accordion .accordion-button:not(.collapsed):after {
+  color: white;
+}
+/*////////////////////////
 ///      Lightbox     ////
 ////////////////////////*/
 .fancybox-close { 
@@ -1494,7 +1598,7 @@ ul.sect li .icono {
   position: relative;
   margin-right: -25px;
   cursor: pointer;
-  transition: all 300ms;
+
 }
 .slider-nav .slick-slide:nth-child(1) {
   z-index: 3;
