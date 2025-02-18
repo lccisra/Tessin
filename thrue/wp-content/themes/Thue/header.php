@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 	<!-- Google tag (gtag.js) -->
@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-6 col-md-3 d-flex align-items-center">            
 		   		<a href="<?php bloginfo('url'); ?>" title="Home">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" width="192" height="50" title="Thrue" alt="Thrue">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" width="141" height="56" title="Thrue" alt="Thrue">
           </a> 
         </div>
         <div class="col-6 col-md-9 header-navigation">
@@ -57,12 +57,6 @@
       <div class="close-menu icon-close"></div>
       <nav>
         <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
-      </nav>
-      <div class="right">
-        <ul class="social">
-          <li><a href="<?=get_post_meta(2,'linkedin', true)?>" target="_blank" class="icon-linkedin"></a></li>
-          <!--<li><a href="<?=get_post_meta(2,'youtube', true)?>" target="_blank" class="icon-youtube"></a></li>-->
-        </ul>
-      </div>   
+      </nav>  
     </div>     
   </header>

@@ -9,12 +9,12 @@
           <img src="<?php the_field('img_slide_1'); ?>" alt="<?php the_field('alt_slide_1'); ?>" title="<?php the_field('alt_slide_1'); ?>" width="1280" height="760">
           <div class="container caption">
             <div class="row">
-              <div class="col-md-12 col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="col-md-12 center wow fadeInRight" data-wow-delay="0.2s">
               	<div class="content-box">
               		<?php the_field('txt_slide_1'); ?>
                   <div class="btns"> 
                     <?php if(get_post_meta($post->ID,'link_slide_1',true)): ?>
-              		  <a href="<?php the_field('link_slide_1'); ?>" class="btn white">Conocer más <i class="icon-cta-arrow"></i></a>
+              		  <a href="<?php the_field('link_slide_1'); ?>" class="btn btn-blue">Conocer más</a>
                     <?php endif; ?>
                     <?php if(get_post_meta($post->ID,'link_youtube_slide_1',true)): ?>
                     <a href="<?php the_field('link_youtube_slide_1'); ?>" class="fancybox-media icon-play play-video white">Ver video</a>
@@ -33,12 +33,12 @@
           <img src="<?php the_field('img_slide_2'); ?>" alt="<?php the_field('alt_slide_2'); ?>" title="<?php the_field('alt_slide_2'); ?>" width="1280" height="760">
           <div class="container caption">
             <div class="row">
-              <div class="col-md-12 col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="col-md-12 center wow fadeInRight" data-wow-delay="0.2s">
                 <div class="content-box">
                   <?php the_field('txt_slide_2'); ?>
                   <div class="btns"> 
                     <?php if(get_post_meta($post->ID,'link_slide_2',true)): ?>
-                    <a href="<?php the_field('link_slide_2'); ?>" class="btn white">Conocer más <i class="icon-cta-arrow"></i></a>
+                    <a href="<?php the_field('link_slide_2'); ?>" class="btn btn-blue">Conocer más</a>
                     <?php endif; ?>
                     <?php if(get_post_meta($post->ID,'link_youtube_slide_2',true)): ?>
                     <a href="<?php the_field('link_youtube_slide_2'); ?>" class="fancybox-media icon-play play-video white">Ver video</a>
@@ -57,12 +57,12 @@
           <img src="<?php the_field('img_slide_3'); ?>" alt="<?php the_field('alt_slide_3'); ?>" title="<?php the_field('alt_slide_3'); ?>" width="1280" height="760">
           <div class="container caption">
             <div class="row">
-              <div class="col-md-12 col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="col-md-12 center wow fadeInRight" data-wow-delay="0.2s">
                 <div class="content-box">
                   <?php the_field('txt_slide_3'); ?>
                   <div class="btns"> 
                     <?php if(get_post_meta($post->ID,'link_slide_3',true)): ?>
-                    <a href="<?php the_field('link_slide_3'); ?>" class="btn white">Conocer más <i class="icon-cta-arrow"></i></a>
+                    <a href="<?php the_field('link_slide_3'); ?>" class="btn btn-blue">Conocer más</a>
                     <?php endif; ?>
                     <?php if(get_post_meta($post->ID,'link_youtube_slide_3',true)): ?>
                     <a href="<?php the_field('link_youtube_slide_3'); ?>" class="fancybox-media icon-play play-video white">Ver video</a>
@@ -76,17 +76,13 @@
       </div>
       <?php endif; ?>
     </div> 
-    <ul class="social hide-md">
-      <li><a href="<?=get_post_meta(2,'linkedin', true)?>" target="_blank" class="icon-linkedin"></a></li>
-      <!--<li><a href="<?=get_post_meta(2,'youtube', true)?>" target="_blank" class="icon-youtube"></a></li>-->
-    </ul>
   </section>
   <?php endwhile; endif; wp_reset_query(); ?>    
-  <section class="pt80 bg-drk bg-h-service">
+  <section class="pt80 bg-dark-blue">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p class="subtitle"><?php the_field('subtitle_service'); ?></p>
+          <p class="subtitle green"><?php the_field('subtitle_service'); ?></p>
           <div class="txt-white"><?php the_field('txt_service'); ?></div>
         </div>
         <?php $args = array('numberposts' => -1,'post_type'=> 'services'); $the_query = new WP_Query( $args ); ?>
@@ -114,21 +110,24 @@
         <div class="col-md-6 pb30 bullets">
           <p class="subtitle"><?php the_field('subtitle_about'); ?></p>
           <?php the_field('txt_about'); ?>
-          <div class="years pt20 pb20">
+          
+          <div class="d-flex">
+            <a href="<?php the_permalink('7'); ?>" class="btn btn-blue">Conócenos</a>
+            <div class="call-box">
+              <i class="icon-phone"></i><?php the_field('txt_call'); ?>
+            </div>  
+          </div>   
+        </div>
+        <div class="col-md-6 pb30">
+          <div class="years years-box-h">
             <span class="years">
               +<span class="count" style="--tonum:<?php the_field('years'); ?>"></span>
             </span>
             <span class="txt-years"><?php the_field('txt_years'); ?></span>
           </div>
-          <div class="d-flex">
-            <a href="<?php the_permalink('7'); ?>" class="btn yellow">Conócenos <i class="icon-cta-arrow"></i></a>
-            <div class="call-box">
-              <i class="icon-tel"></i><?php the_field('txt_call'); ?>
-            </div>  
-          </div>   
         </div>
-        <div class="col-md-12">
-          <div class="bullets second-text">
+        <div class="col-md-6 pb30">
+          <div class="bullets">
             <?php the_field('txt_about_2'); ?>
           </div>
         </div>
@@ -143,13 +142,13 @@
           <p class="subtitle"><?php the_field('subtitle_banner'); ?></p>
           <div class="txt-banner"><?php the_field('txt_banner'); ?></div>
           <div class="d-flex justify-content-center">  
-            <a href="<?php the_permalink('20'); ?>" class="btn fill-yellow">Contáctanos <i class="icon-cta-arrow"></i></a>
+            <a href="<?php the_permalink('20'); ?>" class="btn btn-aqua">Contáctanos</a>
           </div>  
         </div>
       </div>
     </div>
   </section>
-  <section class="pt80 pb50 wow fadeIn relative latest-post" data-wow-delay="0.2s">
+  <section class="pt80 pb50 wow fadeIn relative" data-wow-delay="0.2s">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -164,13 +163,17 @@
           <a href="<?php the_permalink(); ?>" class="item-blog img-cover">
             <img loading="lazy" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" width="490" height="490">
             <div class="caption">
-              <h3><?php the_title(); ?></h3>
-              <ul class="entry-meta">
-                <li class="icon-calendar"><?php echo get_the_date('d/m/Y'); ?></li>
-                <li class="icon-tag"> <?php echo strip_tags(get_the_tag_list('',' , ','')); ?></li>
-              </ul>
-              <p><?php echo get_the_excerpt(); ?></p>
-              <div class="read-more">Seguir leyendo <i class="icon-cta-arrow"></i></div>
+              <div class="caption-title">
+                <h3><?php the_title(); ?></h3>
+                <ul class="entry-meta">
+                  <li class="icon-calendar"><?php echo get_the_date('d/m/Y'); ?></li>
+                  <li class="icon-tag"> <?php echo strip_tags(get_the_tag_list('',' , ','')); ?></li>
+                </ul>
+              </div>  
+              <div class="caption-txt">
+                <p><?php echo get_the_excerpt(); ?></p>
+                <div class="read-more">Seguir leyendo <i class="icon-arrow-right"></i></div>
+              </div>
             </div>
           </a>
           <?php endforeach; wp_reset_query(); ?>
@@ -183,12 +186,13 @@
           <a href="<?php the_permalink(); ?>" class="item-blog small img-cover">
             <img loading="lazy" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" width="490" height="490">
             <div class="caption">
-              <h3><?php the_title(); ?></h3>
-              <ul class="entry-meta">
-                <li class="icon-calendar"><?php echo get_the_date('d/m/Y'); ?></li>
-                <li class="icon-tag"> <?php echo strip_tags(get_the_tag_list('',' , ','')); ?></li>
-              </ul>
-              <div class="read-more">Seguir leyendo <i class="icon-cta-arrow"></i></div>
+              <div class="caption-title">
+                <h3><?php the_title(); ?></h3>
+                <ul class="entry-meta">
+                  <li class="icon-calendar"><?php echo get_the_date('d/m/Y'); ?></li>
+                  <li class="icon-tag"> <?php echo strip_tags(get_the_tag_list('',' , ','')); ?></li>
+                </ul>
+              </div>  
             </div>
           </a>
           <?php endforeach; wp_reset_query(); ?>
@@ -197,21 +201,20 @@
     </div>
   </section>
   <?php endwhile; endif; wp_reset_query(); ?>  
-  <section class="bg-lght bg-quotes pt80 pb60">
+  <section class="bg-aqua testi pt80 pb60">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-md-12 col-lg-8 center">
-          <p class="subtitle"><?php the_field('subtitle_quote'); ?></p>
+        <div class="col-md-6 d-flex justify-content-center flex-column">
           <?php the_field('txt_quote'); ?>
+          <img src="<?php bloginfo('template_url'); ?>/assets/img/firm.svg" width="300" height="32" title="Thrue" alt="Thrue">
         </div>
-        <div class="col-md-12">
+        <div class="col-md-6">
           <div class="sld-wrp">
             <div class="slider-for">
               <?php $args = array('numberposts' => -1,'post_type'=> 'testimonios'); $the_query = new WP_Query( $args ); ?>
               <?php $i=0; if($the_query->have_posts()): while( $the_query->have_posts()) : $the_query->the_post(); $i++; ?>
               <div class="slide-container">
                 <div class="quote-image">
-                  <i class="icon-quote"></i>
                   <img loading="lazy" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" width="200" height="200">
                 </div>
               </div>

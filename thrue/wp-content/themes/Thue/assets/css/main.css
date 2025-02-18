@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway", serif;
   color: #292B33;
   font-size: 12px;
   font-weight: normal;
@@ -14,7 +14,7 @@ html {
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", serif;
   font-weight: 700;
   color: #191C23;
   line-height: 120%;
@@ -26,7 +26,7 @@ h1, .h1 {
 }
 h2, .h2 {
   font-size: 36px;
-  color: #1F1F1F;
+  color: #2828E0;
 }
 h3, .h3 {
   font-size: 30px;
@@ -54,7 +54,7 @@ ul li,
 ol li,
 p {
   font-size: 15px;
-  color: #7D7F85;
+  color: #000000;
   line-height: 140%;
   margin-bottom: 15px;
 }
@@ -171,23 +171,17 @@ hr {
 .years span.years {
   font-size: 59px;
   line-height: 70%;
-  color: #1F1F1F;
+  color: white;
   font-weight: 800;
-  border-right: 1px solid #BABABA;
-  padding-right: 20px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .years span.txt-years {
   font-size: 16px;
-  color: #1F1F1F;
+  color: white;
   font-weight: 600;
   width: 100%;
   max-width: 200px;
   line-height: 140%;
-}
-.second-text {
-  border-left: 5px solid #FAB51B;
-  padding-left: 20px;
 }
 /*////////////////////////
 ///       Header      ////
@@ -251,38 +245,24 @@ header.flat {
 ///       Footer      ////
 ////////////////////////*/
 footer {
-  background: #1C1D1B url(../img/bg-texture-footer.svg) no-repeat left bottom;
-  margin-top: 60px;
+  background: #000000 url(../img/bg-ft.svg) no-repeat right top;
+  padding-top: 60px;
 }
 footer p,
 footer a { 
-  color: white; 
+  color: #6B6B6B; 
   line-height: 160%;
 }
 footer a:hover {
-  color: #FAB51B;
+  color: #3CB4F7;
 }
 footer h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
   display: inline-block;
-}
-footer h2:before,
-footer h2:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 135px;
-  height: 1px;
-  background-color: #6A6A6A;
-  bottom: 0;
-}
-footer h2:after {
-  width: 30px;
-  background-color: #FAB51B;
 }
 footer nav ul li {
   display: block;
@@ -296,7 +276,7 @@ footer nav ul li {
   font-size: 11px;
 }
 .copyright strong {
-  color: #FAB51B;
+  color: #6B6B6B;
 }
 .cta {
   background-color: #F5F5F5;
@@ -310,7 +290,7 @@ footer nav ul li {
   justify-content: space-between;
 }
 .cta p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", serif;
   font-size: 22px;
   color: #FAB51B;
   font-weight: 600;
@@ -320,6 +300,11 @@ footer nav ul li {
   font-size: 30px;
   color: #1F1F1F;
   font-weight: 700;
+}
+.ft-consulting {
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
 }
 /*///////////////////////
 ///        Menu       ///
@@ -336,10 +321,11 @@ nav ul li {
   margin-right: 20px;
 }
 nav ul li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", serif;
   font-size: 14px;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
   padding: 0;
   padding-top: 2px;
   display: inline-block;
@@ -352,7 +338,7 @@ nav ul li a:hover,
 nav ul li.current-menu-item a,
 nav ul li.current-page-ancestor a,
 nav ul li.current-post-ancestor a {
-  color: #FAB51B;
+  color: #3CB4F7;
 } 
 /*///////////////////////
 ///    Mobile Menu    ///
@@ -425,7 +411,7 @@ nav ul li.current-post-ancestor a {
   margin-bottom: 40px;
 }
 #mobile-menu nav ul li a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway", serif;
   color: white;
   font-weight: 600;
   padding: 15px 10px;
@@ -549,13 +535,14 @@ body.open-menu #mobile-menu {
 ///      Sections     ////
 ////////////////////////*/
 .btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-family: "Raleway", serif;
+  font-size: 18px;
   color: white;
+  font-weight: 600;
   background: transparent;
-  border-radius: 0;
-  height: 54px;
-  border: 1px solid;
+  border-radius: 11px;
+  height: 55px;
+  border: none;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -569,7 +556,24 @@ body.open-menu #mobile-menu {
   width: fit-content;
   z-index: 0;
   overflow: hidden;
+  min-width: 200px;
 }
+.btn-blue {
+  background: #2828E0;
+}
+.btn-blue:hover {
+  background: #3CB4F7;
+  color: white;
+}
+.btn-aqua {
+  background: #3CB4F7;
+}
+.btn-aqua:hover {
+  color: white;
+  background: #2828E0;
+}
+.bg-aqua { background: #3CB4F7; }
+.bg-dark-blue { background-color: #2828E0; }
 .bg-drk { background-color: #1F1F1F; }
 .bg-lght { background-color: #F5F5F5; }
 .bg-yellow { background-color: #FAB51B; }
@@ -627,10 +631,10 @@ body.open-menu #mobile-menu {
    border-color: #1F1F1F;
 }
 .read-more {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-family: "Raleway", serif;
+  font-weight: 600;
   font-size: 15px;
-  color: #FAB51B;
+  color: #3CB4F7;
   cursor: pointer;
   transition: all 300ms; 
 }
@@ -644,7 +648,7 @@ body.open-menu #mobile-menu {
   color: #1F1F1F;
 }
 .play-video {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", serif;
   font-weight: 500;
   font-size: 15px;
 }
@@ -725,17 +729,17 @@ ul.social li:last-child {
 ul.social li a {
   width: 45px;
   height: 45px;
-  border: 1px solid white;
+  border: 1px solid #6B6B6B;
   border-radius: 100px;
   font-size: 15px;
-  color: white;
+  color: #6B6B6B;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 ul.social li a:hover {
-  background: #FAB51B;
-  border-color: #FAB51B;
+  background: #3CB4F7;
+  border-color: #3CB4F7;
 }
 ul.social li a.icon-youtube:before {
   padding-top: 5px;
@@ -768,15 +772,15 @@ ul.social li a.icon-youtube:before {
   margin-left: auto;
 }
 .subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", serif;
   font-size: 18px;
-  font-weight: 600;
-  color: #FAB51B;
-  padding-left: 20px;
-  background: url(../img/lines.svg) no-repeat center left;
-  background-size: 13px;
+  font-weight: 500;
+  color: #2828E0;
   display: inline-block;
   margin-bottom: 0;
+}
+.subtitle.green {
+  color: #C0F943;
 }
 .box-service {
   background: white;
@@ -851,19 +855,22 @@ ul.social li a.icon-youtube:before {
 .call-box i {
   width: 54px;
   height: 54px;
-  background: #FAB51B;
+  color: #2828E0;
   border-radius: 100px;
-  color: white;
-  font-size: 20px;
+  font-size: 25px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  border: 1px solid #2828E0;
 }
 .call-box p {
   font-size: 16px;
   color: #1F1F1F;
   margin-bottom: 0;
+}
+.call-box strong {
+  color: #2828E0;
 }
 .banner {
   padding: 90px 0;
@@ -881,7 +888,7 @@ ul.social li a.icon-youtube:before {
 }
 .banner .txt-banner { padding-bottom: 25px; }
 .banner .txt-banner p {
-  font-size: 28px;
+  font-size: 40px;
   color: white;
   font-weight: 700;
   line-height: 120%;
@@ -902,6 +909,7 @@ ul.social li a.icon-youtube:before {
   overflow: hidden;
   margin-bottom: 30px;
   display: block;
+  border-radius: 25px;
 }
 .item-blog.small {
   height: 230px;
@@ -914,8 +922,6 @@ ul.social li a.icon-youtube:before {
   transform: scale(1.1);
 }
 .item-blog .caption {
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.9  ) 100%);
-  padding: 30px;
   position: absolute;
   top: 0;
   right: 0;
@@ -925,9 +931,18 @@ ul.social li a.icon-youtube:before {
   flex-flow: column;
   justify-content: flex-end;
 }
+.item-blog .caption .caption-title {
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.9  ) 100%);
+  padding: 30px 30px 20px 30px;
+}
+.item-blog .caption .caption-txt {
+  background: #2828E0;
+  padding: 30px;
+}
 .item-blog .caption h3 {
   font-size: 24px;
   color: white;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 .item-blog .caption p {
@@ -938,7 +953,7 @@ ul.social li a.icon-youtube:before {
   color: white;
 }
 ul.entry-meta {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 ul.entry-meta li {
   display: inline-block;
@@ -955,7 +970,7 @@ ul.entry-meta li a:hover {
 }
 ul.entry-meta li:before {
   font-size: 12px;
-  color: #FAB51B;
+  color: #3CB4F7;
   margin-right: 10px;
 }
 ul.entry-meta li.icon-tag:before {
@@ -1009,6 +1024,12 @@ h2.underline:before {
   font-size: 12px;
   font-weight: 700;
   color: white;
+}
+.years-box-h {
+  background: #2828E0;
+  border-radius: 60px;
+  padding: 20px;
+  text-align: center;
 }
 .numeral {
   color: white;
@@ -1144,6 +1165,9 @@ form.searchform input[type=submit] {
   margin-left: 0.625em;
   height: 50px;
 }
+.testi h2 {
+  color: white;
+}
 /*////////////////////////
 ///     Paginate      ////
 ////////////////////////*/
@@ -1161,7 +1185,7 @@ ol.wp-paginate li span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway", serif;
   font-size: 20px;
   color: #1F1F1F;
   font-weight: bold;
@@ -1372,13 +1396,16 @@ blockquote p {
 .herobanner .img-cover:before {
   content: '';
   display: block;
-  background: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.5);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 1;
+  background-image: url(../img/mask.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .herobanner .slick-slide {
  height: 100vh;
@@ -1401,6 +1428,7 @@ blockquote p {
 .herobanner .caption .btns {
   padding-top: 20px;
   display: flex;
+  justify-content: center;
 }
 .herobanner .caption .btns .play-video {
   margin-left: 25px;
@@ -1482,7 +1510,6 @@ ul.slick-dots li button:before {
 .sld-wrp .slick-center .quote-image img {
   filter: grayscale(0);
   opacity: 1;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
 }
 .sld-wrp .slick-center .quote-image i {
   opacity: 1;
@@ -1496,24 +1523,26 @@ ul.slick-dots li button:before {
 }
 .sld-wrp .quote-txt p {
   font-size: 14px;
-  color: #7D7F85;
-  font-style: italic;
+  color: white;
 }
 .sld-wrp .quote-txt h3 {
-  color: #FAB51B;
+  color: white;
   font-weight: 700;
   margin-bottom: 0; 
 }
 .sld-wrp .quote-txt p.position {
   font-size: 12px;
-  color: #1F1F1F;
-  font-style: italic;
+  color: white;
   margin-bottom: 5px;
 }
 .sld-wrp .quote-txt p.company {
   font-size: 12px;
-  color: #1F1F1F;
   font-style: normal;
+  background: #2828E0;
+  border-radius: 40px;
+  display: inline-block;
+  color: #C0F943;
+  padding: 5px;
 }
 .slider-for .slick-track {
   padding: 40px 0 25px;
@@ -1545,16 +1574,16 @@ ul.slick-dots li button:before {
 }
 .sld-wrp .slick-prev:hover, 
 .sld-wrp .slick-next:hover {
-  border-color: #FAB51B;
+  border-color: white;
 }
 .sld-wrp .slick-prev:before, 
 .sld-wrp .slick-next:before {
   font-family: "thrue";
-  font-size: 20px;
-  color: #FAB51B;
+  font-size: 25px;
+  color: white;
   font-weight: normal;
   font-style: normal;
-  content: "\65";
+  content: "\75";
 }
 .sld-wrp .slick-prev:before {
   transform: rotate(180deg);
@@ -1734,6 +1763,15 @@ a.policy:hover {
 }
 .icon-plus:before {
   content: "\70";
+}
+.icon-phone:before {
+  content: "\74";
+}
+.icon-arrow-right:before {
+  content: "\75";
+}
+.icon-arrow-left:before {
+  content: "\76";
 }
 /*////////////////////////
 ///   Media Queries    ///
