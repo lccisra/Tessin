@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="128" viewBox="0 0 130 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_116" data-name="Rectángulo 116" width="130" height="128" transform="translate(1008.609 761)" fill="#1f1f1f"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_2" data-name="Enmascarar grupo 2" transform="translate(-1008.609 -761)" clip-path="url(#clip-path)">
+    <g id="texture" transform="translate(1184.357 974.051) rotate(-180)" opacity="0.662">
+      <rect id="Rectángulo_109" data-name="Rectángulo 109" width="43.303" height="43.303" transform="translate(89.346 30.62) rotate(-45)" fill="#fff"/>
+      <rect id="Rectángulo_110" data-name="Rectángulo 110" width="65.821" height="65.821" transform="translate(17.167 71.079) rotate(-45)" fill="#fff"/>
+      <rect id="Rectángulo_111" data-name="Rectángulo 111" width="65.821" height="65.821" transform="translate(0 166.509) rotate(-45)" fill="#fff"/>
+      <rect id="Rectángulo_112" data-name="Rectángulo 112" width="43.303" height="43.303" transform="translate(73.638 127.5) rotate(-45)" fill="#fff"/>
+      <rect id="Rectángulo_113" data-name="Rectángulo 113" width="25.982" height="25.635" transform="translate(114.23 87.001) rotate(-45)" fill="#fff"/>
+      <rect id="Rectángulo_114" data-name="Rectángulo 114" width="25.982" height="25.635" transform="translate(98.185 183.983) rotate(-45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

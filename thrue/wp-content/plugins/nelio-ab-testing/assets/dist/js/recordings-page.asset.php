@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('nab-utils', 'react', 'wp-api-fetch', 'wp-components', 'wp-data', 'wp-date', 'wp-dom-ready', 'wp-element', 'wp-i18n', 'wp-notices', 'wp-url'), 'version' => '3e766a76bd15fb840410');

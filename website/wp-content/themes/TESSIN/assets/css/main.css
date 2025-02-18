@@ -1429,11 +1429,13 @@ ul.sect li .icono {
   position: absolute;
   right: 10px;
 }
-.sidebar ul.menu li a:hover {
+.sidebar ul.menu li a:hover,
+.sidebar ul.menu li.current-menu-item a {
   color: white;
-  background: #222222;
+  background: #323232;
 }
-.sidebar ul.menu li a:hover:before {
+.sidebar ul.menu li a:hover:before,
+.sidebar ul.menu li.current-menu-item a:before {
   background: #4B4A4A;
   transform: rotate(0deg);
 }

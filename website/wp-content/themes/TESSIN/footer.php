@@ -9,7 +9,7 @@
 								<div class="col-md-12 col-lg-6 cta">
 									<?php dynamic_sidebar('calltoaction'); ?>
 									<div class="btns d-flex">
-										<a href="" class="btn">Cotizar <i class="bi bi-arrow-right-short"></i></a>
+										<a href="<?php the_permalink('368'); ?>" class="btn">Cotizar <i class="bi bi-arrow-right-short"></i></a>
 										<a href="" class="btn white">Llámanos <i class="bi bi-arrow-right-short"></i></a>
 									</div>
 								</div>

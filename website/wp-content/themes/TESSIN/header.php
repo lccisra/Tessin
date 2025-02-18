@@ -34,7 +34,8 @@
         </div>
         <div class="col-6 col-md-9 header-navigation">
           <div class="hamburger icon-menu show-xxl"></div>
-          <div class="navigation hide-xxl">
+          <!-- <div class="navigation hide-xxl"> -->
+          <div class="navigation">
             <nav>
               <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
             </nav>
@@ -50,7 +51,7 @@
             <?php //get_search_form(); ?>
           </div>
           <div class="navigation cntc hide-xxl">
-            <a href="" class="btn">CONTÁCTANOS <i class="bi bi-arrow-right-short"></i></a>
+            <a href="<?php the_permalink('368'); ?>" class="btn">CONTÁCTANOS <i class="bi bi-arrow-right-short"></i></a>
           </div>  
         </div> 
       </div>  
