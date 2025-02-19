@@ -55,7 +55,7 @@ $(document).ready(function(){
     asNavFor: '.slider-nav',
     autoplay: true,
     // speed: 2000,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     pauseOnHover:false
   });
   $('.slider-nav').slick({
@@ -69,11 +69,11 @@ $(document).ready(function(){
   });
   //Servicios
   $('.services').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
@@ -126,7 +126,7 @@ $(document).ready(function(){
     slidesToShow: 2,
     slidesToScroll: 2,
     speed: 1500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     pauseOnFocus: false,
