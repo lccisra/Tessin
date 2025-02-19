@@ -29,9 +29,9 @@
 								<div class="col-md-3 pb30">
 									<?php dynamic_sidebar('Footer-col-3'); ?>
 									<ul class="social">
-										<li><a href="" title="linkedin" class="icon-linkedin" target="_blank"></a></li>
-										<li><a href="" title="instagram" class="icon-instagram" target="_blank"></a></li>
-										<li><a href="" title="facebook" class="icon-facebook" target="_blank"></a></li>
+										<li><a href="<?=get_post_meta(2,'linkedin', true)?>" title="linkedin" class="icon-linkedin" target="_blank"></a></li>
+										<li><a href="<?=get_post_meta(2,'instagram', true)?>" title="instagram" class="icon-instagram" target="_blank"></a></li>
+										<li><a href="<?=get_post_meta(2,'facebook', true)?>" title="facebook" class="icon-facebook" target="_blank"></a></li>
 									</ul>
 								</div>
 								<div class="col-md-12 copyright">
@@ -45,6 +45,7 @@
 			</div>
 		</div>
 	</footer>
+	<a href="<?=get_post_meta(2,'whatsapp', true)?>" title="whatsapp" class="whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script defer type="text/javascript" src='https://code.jquery.com/jquery-1.8.2.min.js'></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/wow.js"></script> 
