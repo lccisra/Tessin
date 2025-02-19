@@ -100,7 +100,7 @@ $(document).ready(function(){
     slidesToScroll: 6,
     speed: 1500,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3400,
     pauseOnHover: false,
     pauseOnFocus: false,
     dots: true,

@@ -93,7 +93,7 @@ blockquote {
 blockquote svg {
   width: 27px;
   height: 27px;
-  color: #FB5519;
+  color: #F5821F;
   display: block;
 }
 blockquote p {
@@ -241,7 +241,7 @@ header.smaller .navigation.srch {
   justify-content: center;
 }
 .srch a:hover {
-  color: #fb5519 !important;
+  color: #F5821F !important;
 }
 /*////////////////////////
 ///       Footer      ////
@@ -280,7 +280,7 @@ footer h4:before {
   display: block;
   width: 60px;
   height: 2px;
-  background: #FB5519;
+  background: #F5821F;
   position: absolute;
   bottom: 0;
 }
@@ -289,7 +289,7 @@ footer h4:before {
   font-family: bootstrap-icons !important;
   content: "\f285";
   font-size: 12px;
-  color: #FB5519;
+  color: #F5821F;
   margin-right: 5px;
   position: relative;
   top: 1px;
@@ -313,7 +313,7 @@ footer h4:before {
 }
 .ft-contact-nav li:before {
   font-size: 12px;
-  color: #FB5519;
+  color: #F5821F;
   margin-right: 5px;
   top: 4px;
   left: 0;
@@ -343,7 +343,7 @@ ul.social li a {
 }
 ul.social li a:hover {
   color: white;
-  background: #fb5519;
+  background: #F5821F;
 }
 .copyright {
   padding-bottom: 15px;
@@ -358,7 +358,7 @@ ul.social li a:hover {
   color: #CDCDCD;
 }
 .copyright p strong {
-  color: #FB5519;
+  color: #F5821F;
 }
 .copyright a { text-decoration: underline; }
 /*///////////////////////
@@ -404,7 +404,7 @@ nav ul li a:hover:after,
 nav ul li.current-menu-item a:after,
 nav ul li.current-page-ancestor a:after {
   width: 100%;
-  background: #fb5519;
+  background: #F5821F;
 }
 nav ul li a:hover,
 nav ul li.current-menu-item a,
@@ -469,7 +469,7 @@ nav ul li:last-child {
   border-radius: 10px;
   text-align: center;
   transition: all 300ms;
-  background: #FB5519;
+  background: #F5821F;
 }
 .hamburger:hover {
   background: #010101;
@@ -611,7 +611,7 @@ body.open-menu #mobile-menu {
 ///      Sections     ////
 ////////////////////////*/
 .bg-texture-orange {
-  background: url(../img/texture-orange.svg) #FB5519;
+  background: url(../img/texture-orange.svg) #F5821F;
 }
 .bg-texture-gray {
   background: url(../img/bg-texture-gray.svg) #f8f8f8;
@@ -625,7 +625,7 @@ body.open-menu #mobile-menu {
   font-size: 16px;
   color: white;
   text-transform: uppercase;
-  background: #FB5519;
+  background: #F5821F;
   font-weight: 600;
   border-radius: 50px;
   height: 50px;
@@ -658,7 +658,7 @@ body.open-menu #mobile-menu {
   transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
 }
 .btn:hover {
-  background: #FB5519;
+  background: #F5821F;
   color: white;
 }
 .btn:hover::before {
@@ -667,7 +667,7 @@ body.open-menu #mobile-menu {
 }
 .btn i {
   color: white;
-  background: #FF7746;
+  background: #ff9c46;
   font-size: 26px;
   border-radius: 50px 50px 50px 50px;
   position: relative;
@@ -708,7 +708,7 @@ body.open-menu #mobile-menu {
 }
 .btn-circle {
   color: white;
-  background: #FB5519;
+  background: #F5821F;
   font-size: 36px;
   border-radius: 50px 50px 50px 50px;
   position: relative;
@@ -728,7 +728,7 @@ body.open-menu #mobile-menu {
 }
 .more {
   font-size: 12px;
-  color: #FB5519;
+  color: #F5821F;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 300ms;
@@ -826,7 +826,7 @@ body.open-menu #mobile-menu {
 .subtitle {
   font-size: 16px;
   font-weight: 600;
-  color: #FB5519;
+  color: #F5821F;
   position: relative;
   display: inline-block;
   padding-left: 50px;
@@ -836,7 +836,7 @@ body.open-menu #mobile-menu {
   display: block;
   width: 30px;
   height: 3px;
-  background: #FB5519;
+  background: #F5821F;
   position: absolute;
   left: 0;
   top: 50%;
@@ -936,7 +936,7 @@ a.call:before {
   font-weight: 600;
   height: 50px;
   margin-bottom: 5px;
-  color: #FB5519;
+  color: #F5821F;
   margin-right: 20px;
 }
 .item-num .year-numb:before {
@@ -958,7 +958,7 @@ a.call:before {
   margin-bottom: 20px;
 }
 .banner p strong {
-  color: #FB5519;
+  color: #F5821F;
 }
 .banner .path {
   border-radius: 15px 15px 0 0;
@@ -1148,7 +1148,7 @@ a.call:before {
   content: "\f26a";
   font-family: bootstrap-icons !important;
   font-size: 12px;
-  color: #FB5519;
+  color: #F5821F;
   position: absolute;
   left: 0;
 }
@@ -1284,7 +1284,7 @@ ul.sect li .icono {
 }
 .card-project .project-desc h3 { margin-bottom:5px; }
 .card-project .project-desc strong {
-  color: #FB5519;
+  color: #F5821F;
 }
 .card-project .project-desc p { margin-bottom:0; }
 .card-project .project-desc .btn-circle {
@@ -1339,7 +1339,7 @@ ul.sect li .icono {
 }
 .process li:after {
   content: '';
-  border: 3px dashed #FB5519;
+  border: 3px dashed #F5821F;
   position: absolute;
   top: -13px;
   right: -13px;
@@ -1355,7 +1355,7 @@ ul.sect li .icono {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: #FB5519;
+  background: #F5821F;
   border: 3px solid white;
   justify-content: center;
   align-items: center;
@@ -1462,7 +1462,7 @@ ul.sect li .icono {
 .accordion .accordion-button:after {
   font-family: bootstrap-icons !important;
   content: "\f124";
-  color: #FB5519;
+  color: #F5821F;
   background-image: none;
   font-size: 30px;
   height: auto;
@@ -1481,7 +1481,7 @@ ul.sect li .icono {
 .accordion .accordion-button:not(.collapsed) {
   color: white;
   box-shadow: none;
-  background: #FB5519;
+  background: #F5821F;
   border-radius: 10px 10px 0 0 !important;
 }
 .accordion .accordion-button:not(.collapsed):after {
@@ -1492,7 +1492,7 @@ ul.sect li .icono {
 ////////////////////////*/
 .fancybox-close { 
   background: none !important;
-  background-color: #FB5519 !important;
+  background-color: #F5821F !important;
   border-radius: 40px;
   color: white !important;
   display: flex;
@@ -1645,7 +1645,7 @@ ul.sect li .icono {
 .slick-dots li.slick-active { width:25px; }
 .slick-dots li.slick-active button {
   width: 25px;
-  background: #FB5519;
+  background: #F5821F;
 }
 .slick-dots li button:before { content: none; }
 .slick-dots { bottom: -45px; }
@@ -1663,7 +1663,7 @@ ul.sect li .icono {
 .slick-next:before {
   font-family: bootstrap-icons !important;;
   font-size: 36px;
-  color: #fb5519;
+  color: #F5821F;
   opacity: 1;
 } 
 .slick-prev:focus, 
@@ -1692,6 +1692,9 @@ ul.sect li .icono {
 }
 .projects .slick-next {
   top: calc(50% - 80px);
+}
+.clients .slick-slide img {
+  margin: 0 auto;
 }
 /*////////////////////////
 ///      Counter       ///
