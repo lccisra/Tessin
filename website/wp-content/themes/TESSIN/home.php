@@ -95,7 +95,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+				<div class="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="item-num">
 						<div class="year-numb">
 							<div class="count" style="--tonum:<?php echo wp_kses_post( get_field('num_1')); ?>"></div>
@@ -105,7 +105,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+				<div class="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
 					<div class="item-num">
 						<div class="year-numb">
 							<div class="count" style="--tonum:<?php echo wp_kses_post( get_field('num_2')); ?>"></div>
@@ -115,7 +115,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+				<div class="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
 					<div class="item-num">
 						<div class="year-numb">
 							<div class="count" style="--tonum:<?php echo wp_kses_post( get_field('num_3')); ?>"></div>
@@ -125,7 +125,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+				<div class="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
 					<div class="item-num">
 						<div class="year-numb">
 							<div class="count" style="--tonum:<?php echo wp_kses_post( get_field('num_4')); ?>"></div>

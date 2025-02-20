@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   color: #191C23;
   text-transform: uppercase;
-  line-height: 80%;
+  line-height: 90%;
   margin: 0 0 20px 0;
 }
 h1, .h1 {
@@ -945,6 +945,10 @@ a.call:before {
   left: -40px;
   top: 16px;
 }
+.numerals .item-num {
+  padding-top: 50px;
+  padding-bottom: 40px;
+} 
 .banner {
   padding: 80px 50px 160px 40px;
   text-align: center;
@@ -1406,6 +1410,65 @@ ul.sect li .icono {
   color: white;
   background: #4B4A4A;
 }
+.intro-about {
+  height: 630px;
+}
+.intro-about .card-years {
+  width: 245px;
+  height: 320px;
+}
+.intro-about.intro-img .path.crt {
+  width: 275px;
+  height: 365px;
+} 
+.intro-about.intro-img .path.crt:after {
+  left: -15px;
+  top: initial;
+  bottom: 44px;
+  height: 15px;
+  width: 15px;
+  transform: rotate(180deg);
+}
+.intro-about.intro-img .path.crt::before {
+  height: 15px;
+  width: 15px;
+  left: -15px;
+}
+.intro-about.intro-img .path.crb {
+  border-top-left-radius: 15px;
+}
+.intro-about.intro-img .path.crb::before {
+  left: -15px;
+  width: 15px;
+  height: 15px;
+}
+.intro-about.intro-img .path.crb {
+  width: 350px;
+  height: 310px;
+}
+.intro-about.intro-img .first-image {
+  width: 400px;
+}
+.intro-about.intro-img .second-image {
+  width: 320px;
+  height: 280px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+} 
+.intro-about.intro-img .card-years .year-numb {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+.intro-about.intro-img .card-years p {
+  font-size: 16px;
+}
+.txt-about ul li {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
 /*////////////////////////
 ///       Sidebar     ////
 ////////////////////////*/
@@ -1474,6 +1537,15 @@ ul.sect li .icono {
 .accordion {
   padding: 30px 30px 20px 30px;
   border-radius: 15px;
+}
+.accordion.ab {
+  padding: 0;
+}
+.accordion.ab .accordion-button {
+  background: #f5f5f5;
+}
+.accordion.ab .accordion-body {
+  background: #f5f5f5;
 }
 .accordion .accordion-button {
   background: white;
