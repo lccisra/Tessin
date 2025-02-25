@@ -53,7 +53,7 @@ $(document).ready(function(){
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav',
-    autoplay: true,
+    autoplay: false,
     // speed: 2000,
     autoplaySpeed: 5000,
     pauseOnHover:false

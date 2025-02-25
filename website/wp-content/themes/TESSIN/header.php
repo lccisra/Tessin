@@ -35,7 +35,7 @@
         <div class="col-6 col-md-9 header-navigation">
           <div class="hamburger icon-menu show-xxl"></div>
           <!-- <div class="navigation hide-xxl"> -->
-          <div class="navigation">
+          <div class="navigation hide-xxl">
             <nav>
               <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
             </nav>

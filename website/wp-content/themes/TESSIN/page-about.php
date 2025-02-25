@@ -107,7 +107,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="pt80 pb40">
 		<div class="container">
 			<div class="row">
@@ -116,7 +115,6 @@
 						<p class="subtitle"><?php echo wp_kses_post( get_field('second_subtitle')); ?></p>
 						<?php echo wp_kses_post( get_field('second_txt')); ?>
 					</div>
-					<!---->
 					<div class="accordion ab accordion-flush" id="accordionFlushExample">
 					  <div class="accordion-item">
 					    <h2 class="accordion-header" id="flush-headingOne">
@@ -149,7 +147,6 @@
 					    </div>
 					  </div>
 					</div>
-					<!---->
 				</div>
 				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
 					<img loading="lazy" src="<?php echo wp_kses_post( get_field('second_img')); ?>" class="rounded15" width="610" height="480" alt="Tessin compromiso constante" title="Tessin compromiso constante">
@@ -157,6 +154,5 @@
 			</div>
 		</div>
 	</section>
-
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

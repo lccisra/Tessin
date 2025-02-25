@@ -284,6 +284,9 @@ footer h4:before {
   position: absolute;
   bottom: 0;
 }
+footer .btn::before {
+  background: #5c5c5c;
+}
 .ft-nav ul li { margin-bottom:m10px; }
 .ft-nav ul li:before {
   font-family: bootstrap-icons !important;
@@ -1531,6 +1534,53 @@ ul.sect li .icono {
   justify-content: center;
   padding: 5px 0;
 }
+.contaier-contact {
+  padding: 60px;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0 0 30px rgba(0,0,0,.15);
+  margin-top: -60px;
+  position: relative;
+  z-index: 1;
+}
+.card-contact-info {
+  border-radius: 5px;
+  background: #F8F8F8;
+  min-height: 185px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card-contact-info .info-icono {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-contact-info .info-txt {
+  padding-left: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.card-contact-info .info-txt h4 {
+  text-transform: none;
+  margin-bottom: 5px;
+}
+.card-contact-info .info-txt p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.map iframe {
+  width: 100%;
+  height: 440px;
+  border-radius: 15px;
+}
 /*////////////////////////
 ///      Accordeon    ////
 ////////////////////////*/
@@ -1604,7 +1654,6 @@ ul.sect li .icono {
   font-family: bootstrap-icons !important;
   content: "\f5ee";
 }
-
 /*////////////////////////
 ///       Slick       ////
 ////////////////////////*/
@@ -1616,16 +1665,18 @@ ul.sect li .icono {
   left: 12px;
   padding-bottom: 100px;
 }
-.herobanner .caption strong {
-  font-size: 31px;
+.herobanner .caption em {
+  font-size: 28px;
   color: white;
   font-weight: normal;
   line-height: 120%;
+  font-style: normal;
 }
-.herobanner .caption h1 {
-  font-size: 93px;
+.herobanner .caption strong {
+  font-size: 70px;
   color: white;
   font-weight: normal;
+  line-height: 80%;
   margin-bottom: 10px;
 }
 .herobanner .caption p {

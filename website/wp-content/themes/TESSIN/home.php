@@ -8,26 +8,68 @@
 		<a href="#intro" class="page-scroll">SCROLL DOWN <i class="bi bi-arrow-right"></i></a>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12 container-caption">
-					<div class="caption">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-9">
-									<div class="wow fadeInLeft" data-wow-delay="0.4s">
-										<?php echo wp_kses_post( get_field('stage_txt')); ?>
-									</div>
-									<div class="herobanner-btns wow fadeInLeft" data-wow-delay="0.7s">
-										<a href="<?php the_permalink('19'); ?>" class="btn">Servicios <i class="bi bi-arrow-right-short"></i></a>
-										<a href="<?php the_permalink('23'); ?>" class="btn white">Nosotros <i class="bi bi-arrow-right-short"></i></a>
+				<div class="col-md-12">
+					<div class="slider-for">
+						<div class="img-cover">
+							<img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="1440" height="800" alt="Especialistas en construcción de naves industriales" title="Especialistas en construcción de naves industriales">
+							<!---->
+							<div class="caption">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-9">
+											<div class="wow fadeInLeft" data-wow-delay="0.4s">
+												<?php echo wp_kses_post( get_field('stage_txt_1')); ?>
+											</div>
+											<div class="herobanner-btns wow fadeInLeft" data-wow-delay="0.7s">
+												<a href="<?php the_permalink('19'); ?>" class="btn">Servicios <i class="bi bi-arrow-right-short"></i></a>
+												<a href="<?php the_permalink('23'); ?>" class="btn white">Nosotros <i class="bi bi-arrow-right-short"></i></a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
+							<!---->
 						</div>
-					</div>
-					<div class="slider-for">
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="1440" height="800" alt="Especialistas en construcción de naves industriales" title="Especialistas en construcción de naves industriales"></div>
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="1440" height="800" alt="Expertos en construcción de instalaciones industriales" title="Expertos en construcción de instalaciones industriales"></div>
-						<div class="img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="1440" height="800" alt="Profesionales en edificación de naves industriales" title="Profesionales en edificación de naves industriales"></div>
+						<div class="img-cover">
+							<img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="1440" height="800" alt="Expertos en construcción de instalaciones industriales" title="Expertos en construcción de instalaciones industriales">
+							<!---->
+							<div class="caption">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-9">
+											<div class="wow fadeInLeft" data-wow-delay="0.4s">
+												<?php echo wp_kses_post( get_field('stage_txt_2')); ?>
+											</div>
+											<div class="herobanner-btns wow fadeInLeft" data-wow-delay="0.7s">
+												<a href="<?php the_permalink('19'); ?>" class="btn">Servicios <i class="bi bi-arrow-right-short"></i></a>
+												<a href="<?php the_permalink('23'); ?>" class="btn white">Nosotros <i class="bi bi-arrow-right-short"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---->
+						</div>
+						<div class="img-cover">
+							<img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="1440" height="800" alt="Profesionales en edificación de naves industriales" title="Profesionales en edificación de naves industriales">
+							<!---->
+							<div class="caption">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-10">
+											<div class="wow fadeInLeft" data-wow-delay="0.4s">
+												<?php echo wp_kses_post( get_field('stage_txt_3')); ?>
+											</div>
+											<div class="herobanner-btns wow fadeInLeft" data-wow-delay="0.7s">
+												<a href="<?php the_permalink('19'); ?>" class="btn">Servicios <i class="bi bi-arrow-right-short"></i></a>
+												<a href="<?php the_permalink('23'); ?>" class="btn white">Nosotros <i class="bi bi-arrow-right-short"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---->
+						</div>
 					</div>
 					<div class="slider-nav">
 						<div class="slider-nav-item img-cover"><img src="<?php echo wp_kses_post( get_field('stage_img_1')); ?>" width="80" height="80" alt="Especialistas en desarrollo de naves industriales" title="Especialistas en desarrollo de naves industriales"></div>
