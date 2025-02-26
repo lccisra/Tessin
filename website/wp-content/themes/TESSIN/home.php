@@ -28,11 +28,9 @@
 									</div>
 								</div>
 							</div>
-							<!---->
 						</div>
 						<div class="img-cover">
 							<img src="<?php echo wp_kses_post( get_field('stage_img_2')); ?>" width="1440" height="800" alt="Expertos en construcción de instalaciones industriales" title="Expertos en construcción de instalaciones industriales">
-							<!---->
 							<div class="caption">
 								<div class="container">
 									<div class="row">
@@ -48,11 +46,9 @@
 									</div>
 								</div>
 							</div>
-							<!---->
 						</div>
 						<div class="img-cover">
 							<img src="<?php echo wp_kses_post( get_field('stage_img_3')); ?>" width="1440" height="800" alt="Profesionales en edificación de naves industriales" title="Profesionales en edificación de naves industriales">
-							<!---->
 							<div class="caption">
 								<div class="container">
 									<div class="row">
@@ -68,7 +64,6 @@
 									</div>
 								</div>
 							</div>
-							<!---->
 						</div>
 					</div>
 					<div class="slider-nav">

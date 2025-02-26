@@ -1396,12 +1396,12 @@ ul.sect li .icono {
   cursor: pointer;
   overflow: hidden;
   box-shadow: rgba(136, 136, 136, 0.4) 0px 1px 7px;
-  transition: all 0.5sease 0s;
+  transition: all 0.5s ease 0s;
   z-index: 200;
   text-decoration: none !important;
   background-color: #F5821F;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   font-size: 25px;
   display: flex;
