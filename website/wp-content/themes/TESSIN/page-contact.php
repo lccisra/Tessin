@@ -28,8 +28,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="contaier-contact">
-						<div class="row">
-							<div class="col-md-4">
+						<div class="row reverse-xl">
+							<div class="col-md-12 col-xl-4 col-a">
 								<div class="card-contact-info wow fadeInRight" data-wow-delay="0.4s">
 									<div class="info-icono bg-texture-orange">
 										<img loading="lazy" src="<?php echo wp_kses_post( get_field('mc_icono_1')); ?>" width="50" height="50" alt="" title="">
@@ -55,9 +55,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7 col-b">
-								<?php the_content(); ?>
-								<?php echo do_shortcode('[contact-form-7 id="5" title="Contacto"]'); ?>	
+							<div class="col-md-12 col-xl-8 col-b">
+								<div class="pb20">
+									<?php the_content(); ?>
+								</div>
+								<div class="contact-box">
+									<?php echo do_shortcode('[contact-form-7 id="44fe407" title="Contacto"]'); ?>
+								</div>	
 							</div>
 						</div>
 					</div>

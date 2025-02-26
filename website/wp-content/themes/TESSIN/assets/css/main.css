@@ -328,7 +328,7 @@ ul.social {
 ul.social li {
   display: inline-block;
   margin-right: 20px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 ul.social li:last-child {
   margin-right: 0;
@@ -431,7 +431,7 @@ nav ul li:last-child {
   box-sizing: border-box;
   z-index: 9999;
   overflow: hidden;
-  background: #122c54;
+  background: #272727;
 }
 #mobile-menu nav {
   float: none;
@@ -1879,43 +1879,49 @@ ul.sect li .icono {
 /*////////////////////////
 ///        Forms       ///
 ////////////////////////*/
-label { margin-bottom: 10px; }
+label { 
+  margin-bottom: 10px; 
+  font-size: 18px;
+  font-weight: 600;
+}
+.wpcf7-radio label {
+  font-weight: normal;
+  font-size: 16px;
+}
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea,
 select {
-  font-size: 16px;
-  color: #222222;
-  background: white;
+  font-size: 15px;
+  color: #010101;
+  background: #F5F5F5;
   border: none;
   width: 100%;
   height: 50px;
   padding: 15px 25px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-radius: 5px;
 }
 textarea {
-  height: 250px;
+  height: 200px;
 }
 select {
-  font-size: 16px;
-  color: #777777;
-  font-weight: 600;
+  font-size: 15px;
+  color: #666666;
   background: url(../img/select-arrow.svg) no-repeat right #F8F8F8;
   -webkit-appearance: none;
   background-position-x: calc(100% - 25px);
 }
 input[type=submit] {
-  width: 160px;
+  width: 200px;
   height: 50px;
-  background: #1B4381;
-  color: white;
+  background: #222222;
   font-size: 16px;
   font-weight: 600;
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 40px;
   text-transform: uppercase;  
   float: right;
   transition: all 300ms;     
@@ -1933,24 +1939,28 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 ::-webkit-input-placeholder { 
-  font-size: 16px;
-  color: #777777;
-  font-weight: 600;
+  font-size: 15px;
+  color: #666666;
 }
 :-moz-placeholder { 
-  font-size: 16px;
-  color: #777777;
-  font-weight: 600;
+  font-size: 15px;
+  color: #666666;;
 }
 ::-moz-placeholder { 
-  font-size: 16px;
-  color: #777777;
-  font-weight: 600;
+  font-size: 15px;
+  color: #666666;;
 }
 :-ms-input-placeholder { 
-  font-size: 16px;
-  color: #777777;
-  font-weight: 600;
+  font-size: 15px;
+  color: #666666;
+}
+.politics {
+  font-size: 12px;
+  color: #666666;
+}
+.politics:hover {
+  color: #313131;
+  text-decoration: underline;
 }
 /*////////////////////////
 ///       Fonts        ///
@@ -2039,6 +2049,9 @@ input[type="checkbox"] {
     width: 60px;
     height: 60px;
   }
+  .reverse-xl .col-a { order: 2; }
+  .reverse-xl .col-b { order: 1; }
+  .contact-box { padding-bottom: 40px; }
 }
 @media screen and (max-width: 1024px) {
 
