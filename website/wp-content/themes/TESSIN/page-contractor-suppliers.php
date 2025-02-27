@@ -37,10 +37,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt20 pb20">
+	<section class="pb40">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 bullets">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-10">
 					<?php echo wp_kses_post( get_field('contractor_txt')); ?>	
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<!---->
-					<div class="accordion accordion-flush bg-light" id="accordionFlushExample">
+					<div class="accordion accordion-flush bg-light form-contrator-suppliers" id="accordionFlushExample">
 					  <div class="accordion-item">
 					    <h2 class="accordion-header" id="flush-headingOne">
 					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -59,7 +59,7 @@
 					      </button>
 					    </h2>
 					    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-					      <div class="accordion-body"><?php echo do_shortcode('[contact-form-7 id="d8ce7a0" title="Proveedor"]'); ?></div>
+					      <div class="accordion-body form-contrator-suppliers"><?php echo do_shortcode('[contact-form-7 id="d8ce7a0" title="Proveedor"]'); ?></div>
 					    </div>
 					  </div>
 					  <div class="accordion-item">

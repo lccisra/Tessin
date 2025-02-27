@@ -24,6 +24,7 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+  <div class="mask-site"></div>
   <header>
 	  <div class="container-fluid">
       <div class="row">
@@ -34,7 +35,6 @@
         </div>
         <div class="col-6 col-md-9 header-navigation">
           <div class="hamburger icon-menu show-xxl"></div>
-          <!-- <div class="navigation hide-xxl"> -->
           <div class="navigation hide-xxl">
             <nav>
               <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
@@ -55,15 +55,25 @@
           </div>  
         </div> 
       </div>  
-	  </div>
-     
-    <div id="mobile-menu">
-      <div class="close-menu icon-close"></div>
-      <nav>
-        <?php wp_nav_menu(array('theme_location'=>'header-menu','container'=>false,'menu_class'=>'')); ?>
-      </nav>
-      <div class="right">
-
-      </div>   
-    </div>     
+	  </div>   
   </header>
+  <div class="hamburger icon-menu show-xxl"></div>
+  <div id="mobile-menu">
+    <div class="d-flex justify-content-end">
+      <div class="close-menu icon-close"></div>
+    </div>
+    <div class="center pb10">
+      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo-tessin.svg" width="180" height="45" title="TESSIN" alt="TESSIN">
+    </div>
+    <nav>
+      <?php wp_nav_menu(array('theme_location'=>'mobile-menu','container'=>false,'menu_class'=>'')); ?>
+    </nav>
+    <div class="center">
+      <ul class="social">
+        <li><a href="<?=get_post_meta(2,'linkedin', true)?>" title="linkedin" class="icon-linkedin" target="_blank"></a></li>
+        <li><a href="<?=get_post_meta(2,'instagram', true)?>" title="instagram" class="icon-instagram" target="_blank"></a></li>
+        <li><a href="<?=get_post_meta(2,'facebook', true)?>" title="facebook" class="icon-facebook" target="_blank"></a></li>
+        <li><a href="<?=get_post_meta(2,'whatsapp', true)?>" title="facebook" class="bi bi-whatsapp" target="_blank"></a></li>
+      </ul>
+    </div>   
+  </div>  

@@ -133,7 +133,7 @@ function get_post_attachment($post_id){
 
 function register_my_menus() {
 	register_nav_menus(
-		array('header-menu' => __('Header Menu'), 'service-menu' => __('Service Menu'), 'footer-menu-col-1' => __('Footer Menu Col 1'), 'footer-menu-col-2' => __('Footer Menu Col 2'))
+		array('header-menu' => __('Header Menu'), 'service-menu' => __('Service Menu'), 'mobile-menu' => __('Mobile Menu'))
 	);
 }
 add_action( 'init', 'register_my_menus' );
