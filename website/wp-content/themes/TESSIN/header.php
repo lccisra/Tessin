@@ -28,12 +28,12 @@
   <header>
 	  <div class="container-fluid">
       <div class="row">
-        <div class="col-6 col-md-3 d-flex align-items-center">            
+        <div class="col-7 col-md-3 d-flex align-items-center">            
 		   		<a href="<?php bloginfo('url'); ?>" title="TESSIN">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/logo-tessin.svg" class="logo" width="237" height="60" title="TESSIN" alt="TESSIN">
           </a> 
         </div>
-        <div class="col-6 col-md-9 header-navigation">
+        <div class="col-5 col-md-9 header-navigation">
           <div class="hamburger icon-menu show-xxl"></div>
           <div class="navigation hide-xxl">
             <nav>

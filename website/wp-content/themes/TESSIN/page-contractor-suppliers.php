@@ -28,7 +28,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt80 intro">
+	<section class="pt80 intro wow fadeIn" data-wow-delay="0.2s">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-10">
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="pb40">
+	<section class="pb40 wow fadeIn" data-wow-delay="0.2s">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-10">
@@ -50,8 +50,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<!---->
-					<div class="accordion accordion-flush bg-light form-contrator-suppliers" id="accordionFlushExample">
+					<div class="accordion accordion-flush bg-texture-gray form-contrator-suppliers" id="accordionFlushExample">
 					  <div class="accordion-item">
 					    <h2 class="accordion-header" id="flush-headingOne">
 					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -69,11 +68,10 @@
 					      </button>
 					    </h2>
 					    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-					      <div class="accordion-body">Formulario</div>
+					       <div class="accordion-body form-contrator-suppliers"><?php echo do_shortcode('[contact-form-7 id="51f3fe8" title="Contratista"]'); ?></div>
 					    </div>
 					  </div>
 					</div>
-					<!---->	
 				</div>
 			</div>
 		</div>

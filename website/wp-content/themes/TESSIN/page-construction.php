@@ -31,7 +31,7 @@
 	<section class="pt80 pb80">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 bullets">
+				<div class="col-md-7 col-lg-8 bullets">
 					<div class="service-single-img wow fadeIn mb40" data-wow-delay="0.2s">
 						<div class="path"></div>
 						<div class="bg-texture-orange icono-single-service wow fadeInUp" data-wow-delay="0.4s">
@@ -71,7 +71,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-5 col-lg-4">
 					<?php get_sidebar(); ?>
 				</div>
 			</div>

@@ -75,9 +75,11 @@
 						</div>
 						<div class="col-md-1"></div>
 						<div class="col-md-5 wow fadeInLeft col-b" data-wow-delay="0.2s">
-							<div class="card-single-img img-cover rounded15">
-								<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_img')); ?>" width="500" height="450" alt="tessin <?php the_title(); ?>" title="tessin <?php the_title(); ?>">
-							</div>
+							<a href="<?php the_permalink(); ?>">
+								<div class="card-single-img img-cover rounded15">
+									<img loading="lazy" src="<?php echo wp_kses_post( get_field('serv_img')); ?>" width="500" height="450" alt="tessin <?php the_title(); ?>" title="tessin <?php the_title(); ?>">
+								</div>
+							</a>	
 						</div>
 						<?php } ?>	
 					</div>	
