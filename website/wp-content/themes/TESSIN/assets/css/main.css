@@ -1788,7 +1788,13 @@ ul.sect li .icono {
   z-index: 1;
 }
 .slider-nav .slick-list {
-  padding: 0 25px 0 0 !important;
+  padding: 0 0 0 0 !important;
+}
+.slider-nav .slick-list .slick-track {
+  width: 190px !important;
+  transform: none ! important;
+  margin-left: initial !important;
+  margin-right: initial ! ;
 }
 .slick-dots li { width: 15px }
 .slick-dots li button {
@@ -2068,6 +2074,12 @@ input[type="checkbox"] {
   .reverse-xl .col-a { order: 2; }
   .reverse-xl .col-b { order: 1; }
   .contact-box { padding-bottom: 40px; }
+  #intro .btns {
+    flex-flow: column;
+  }
+  #intro .btns a:first-child {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1024px) {
 
@@ -2076,6 +2088,11 @@ input[type="checkbox"] {
   .show-xl { display: inline-block !important; }
   .hide-xl { display: none !important; }
   ul.sect li { width: 40%; }
+  .intro-txt { 
+    padding-left:15px; 
+    padding-top: 0;
+  }
+  .intro-txt .subtitle { margin-left: 0; }
 }
 @media screen and (max-width: 768px) {  }  
 @media screen and (max-width: 767px) {
