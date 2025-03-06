@@ -30,8 +30,8 @@
 	</section>
 	<section class="pt80 pb50">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 pb30">
+			<div class="row reverse-md">
+				<div class="col-md-6 pb30 col-a">
 					<div class="intro-img img-cover intro-about relative wow fadeInUp" data-wow-delay="0.4s">
 						<div class="path crt"></div>
 						<div class="path crb"></div>
@@ -49,7 +49,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 txt-about pt40 pb30 bullets wow fadeIn" data-wow-delay="0.4s">
+				<div class="col-md-6 col-b txt-about pt40 pb30 bullets wow fadeIn" data-wow-delay="0.4s">
 					<?php the_content(); ?>
 				</div>
 			</div>

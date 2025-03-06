@@ -179,7 +179,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="banner img-cover rounded15">
-						<div class="path"></div>
+						<div class="path hide-md"></div>
 						<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_bg')); ?>" width="1400" height="402" alt="Nave industrial" title="Nave industrial">
 						<div class="relative">
 							<img loading="lazy" src="<?php echo wp_kses_post( get_field('banner_isotipo')); ?>" class="isotipo wow bounceIn" width="52" height="60" alt="isotipo tessin" title="isotipo tessin" data-wow-delay="0.6s">
@@ -187,7 +187,7 @@
 								<?php echo wp_kses_post( get_field('banner_txt')); ?>
 							</div>
 						</div>
-						<div class="btns wow fadeInUp" data-wow-delay="0.2s">
+						<div class="btns wow fadeInUp hide-md" data-wow-delay="0.2s">
 							<ul>
 								<li><a title="Contáctanos" href="<?php the_permalink('368'); ?>" class="btn">Contáctanos <i class="bi bi-arrow-right-short"></i></a></li>
 								<li><a title="Conócenos" href="<?php the_permalink('23'); ?>" class="btn dark">Conócenos <i class="bi bi-arrow-right-short"></i></a></li>
@@ -205,10 +205,10 @@
 					<p class="subtitle wow fadeInLeft" data-wow-delay="0.2s"><?php echo wp_kses_post( get_field('project_subtitle')); ?></p>
 					<h2 class="orange wow fadeInLeft" data-wow-delay="0.4s"><?php echo wp_kses_post( get_field('project_title')); ?></h2>
 				</div>
-				<div class="col-md-5 d-flex justify-content-end">
+				<div class="col-md-5 d-flex justify-content-end hide-md">
 					<a href="<?php the_permalink('21'); ?>" class="btn wow fadeInRight" data-wow-delay="0.2s">Ver todos los proyectos <i class="bi bi-arrow-right-short"></i></a>
 				</div>
-				<div class="col-md-11 p0 wow fadeInUp" data-wow-delay="0.2s">
+				<div class="col-md-12 col-lg-11 p0 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="projects">
 						<?php $query = new WP_Query(['post_type' => 'projects', 'posts_per_page'=> 6]); ?> 
 						<?php if($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>

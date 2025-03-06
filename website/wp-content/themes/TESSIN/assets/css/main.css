@@ -2093,6 +2093,21 @@ input[type="checkbox"] {
     padding-top: 0;
   }
   .intro-txt .subtitle { margin-left: 0; }
+  .projects .slick-prev { left: 0px; }
+  .projects .slick-next { right: 0px; }
+  .projects .slick-prev,
+  .projects .slick-next {
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: calc(50% - 100px);
+  }
+  .card-project .project-desc { padding: 30px 20px; }
+  .intro-about.intro-img .path.crt,
+  .intro-about.intro-img .path.crb, 
+  .intro-about.intro-img .first-image { display: none; }
+  .intro-about .card-years,
+  .intro-about.intro-img .second-image { width:100%; }
 }
 @media screen and (max-width: 768px) {  }  
 @media screen and (max-width: 767px) {
@@ -2105,6 +2120,7 @@ input[type="checkbox"] {
   p,
   ul li,
   ol li { font-size: 15px; }
+  .intro p { font-size: 17px; }
   .hide-md { display: none !important; }
   .show-md { display: block; }
   .hide-xs { display: none !important; }
@@ -2145,6 +2161,51 @@ input[type="checkbox"] {
   }
   footer .btns a:first-child {
     margin-bottom: 30px;
+  }
+  .herobanner .slider-for .img-cover,
+  .herobanner .slider-for .slick-slide { height: 400px; }
+  .herobanner .caption p { line-height:130%; }
+  .herobanner .caption em { font-size: 18px; }
+  .herobanner .caption strong { font-size: 30px; }
+  .herobanner .caption { padding-bottom: 20px; }
+  .slick-prev { left: 0px; }
+  .slick-next { right: 0px; }
+  .banner { padding: 20px; }
+  .banner p { font-size: 16px; }
+  .item-num .year-num { font-size: 50px; }
+  .card-project .project-img { height: 300px; }
+  .card-project .project-desc { margin: -30px 15px 0 15px; }
+  .accordion { padding: 10px; }
+  .accordion .accordion-body { padding: 20px 10px; }
+  .item-num .year-numb { font-size:40px; }
+  .numerals .item-num {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .item-num .year-numb:before {
+    content: '+ ';
+    position: relative;
+    left: -25px;
+  }
+  .txt-about ul li { width:100%; }
+  .intro-about .card-years {
+    width: 160px;
+    height: 200px;
+  }
+  .intro-about.intro-img .card-years .year-numb { 
+    font-size:60px; 
+    margin-bottom: 5px;
+  }
+  .intro-about.intro-img .card-years p { font-size:12px; }
+  .txt-about { padding-top: 0; }
+  .intro-about { height: 315px; }
+  .contaier-contact {
+    padding: 0;
+    border-radius: 0;
+    background: white;
+    border: none;
+    box-shadow: none;
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 425px) {}

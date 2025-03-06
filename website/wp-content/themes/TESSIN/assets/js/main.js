@@ -109,13 +109,15 @@ $(document).ready(function(){
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       }
     ]
@@ -135,13 +137,8 @@ $(document).ready(function(){
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]

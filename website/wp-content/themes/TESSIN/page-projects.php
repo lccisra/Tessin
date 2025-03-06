@@ -64,7 +64,7 @@
 			<div class="row">
 				<?php $query = new WP_Query(['post_type' => 'projects']); ?> 
 				<?php if($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
-				<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+				<div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
 					<a href="<?php echo wp_kses_post( get_field('video_youtube')); ?>" class="fancybox-media">
 						<div class="card-project">
 							<div class="project-img img-cover">
